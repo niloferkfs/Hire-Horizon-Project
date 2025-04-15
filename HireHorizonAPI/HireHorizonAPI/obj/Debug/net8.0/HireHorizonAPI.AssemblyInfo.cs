@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HireHorizonAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+391d50a3a1157ad84fe38689c50315c7a5646b5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1dbb27de086f42c2f7ba21f7a25c44f9c612381")]
 [assembly: System.Reflection.AssemblyProductAttribute("HireHorizonAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HireHorizonAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

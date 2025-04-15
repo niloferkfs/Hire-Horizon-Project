@@ -1,149 +1,153 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\",
+  "WorkspaceRootPath": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\migrations\\20250415035526_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\migrations\\20250415035526_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\models\\systemuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\systemuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\requestobjects\\savejobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\requestobjects\\savejobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\requestobjects\\applyjobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\requestobjects\\applyjobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\models\\hirehorizonapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\hirehorizonapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\models\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\interviewschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\interviewschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\addcompanyuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\addcompanyuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\addcompanyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\addcompanyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\jobpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\jobpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\industryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\industryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\skillrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\skillrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\locationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\locationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\adminloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\adminloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\models\\jobinterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\jobinterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\models\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\models\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\jobprovidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\jobprovidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\requestobjects\\jobseekersignuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\requestobjects\\jobseekersignuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\requestobjects\\jobseekerloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\requestobjects\\jobseekerloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\jobprovidersignuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\jobprovidersignuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\jobproviderloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\jobproviderloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\hirehorizonapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\hirehorizonapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\enums\\messagestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\messagestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\enums\\jobinterviewstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\jobinterviewstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\enums\\jobapplicationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\jobapplicationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\extensions\\applicationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\extensions\\applicationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\hirehorizonapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\hirehorizonapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\hirehorizonapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\migrations\\20250415035526_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\migrations\\20250415035526_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\models\\systemuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\systemuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\requestobjects\\savejobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\requestobjects\\savejobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\requestobjects\\applyjobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\requestobjects\\applyjobrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\models\\hirehorizonapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\hirehorizonapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\models\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\signuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\interviewschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\interviewschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\addcompanyuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\addcompanyuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\addcompanyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\addcompanyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\jobpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\jobpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\industryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\industryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\skillrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\skillrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\locationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\locationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\admin\\requestobjects\\adminloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\requestobjects\\adminloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\models\\jobinterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\jobinterview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\models\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\savedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\models\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\models\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\jobseekercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\jobprovidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\jobprovidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\admin\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\requestobjects\\jobseekersignuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\requestobjects\\jobseekersignuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobseeker\\requestobjects\\jobseekerloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobseeker\\requestobjects\\jobseekerloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\jobprovidersignuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\jobprovidersignuprequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\api\\jobprovider\\requestobjects\\jobproviderloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\api\\jobprovider\\requestobjects\\jobproviderloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\hirehorizonapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\hirehorizonapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\enums\\messagestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\messagestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\enums\\jobinterviewstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\jobinterviewstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\enums\\jobapplicationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\jobapplicationstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\enums\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\extensions\\applicationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\extensions\\applicationserviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|d:\\hire-horizon-project\\hirehorizonapi\\hirehorizonapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9A7D86E0-11CD-4D9D-86E0-C3C4527F8691}|HireHorizonAPI\\HireHorizonAPI.csproj|solutionrelative:hirehorizonapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\git\\.netcore-fs-15\\chapter 10\\students\\nilofer\\activity\\hirehorizonapi\\domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|d:\\hire-horizon-project\\hirehorizonapi\\domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA97F4AC-A72A-4232-9FAB-96B44738B1C1}|Domain\\Domain.csproj|solutionrelative:domain\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -154,366 +158,351 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 33,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250415035526_initial.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Migrations\\20250415035526_initial.cs",
-              "RelativeDocumentMoniker": "Domain\\Migrations\\20250415035526_initial.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Migrations\\20250415035526_initial.cs",
-              "RelativeToolTip": "Domain\\Migrations\\20250415035526_initial.cs",
+              "DocumentIndex": 1,
+              "Title": "HireHorizonAPI.http",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\HireHorizonAPI.http",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\HireHorizonAPI.http",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\HireHorizonAPI.http",
+              "RelativeToolTip": "HireHorizonAPI\\HireHorizonAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T03:55:26.613Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-15T04:33:07.219Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SaveJobRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\SaveJobRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\SaveJobRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\SaveJobRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\SaveJobRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "20250415035526_initial.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Migrations\\20250415035526_initial.cs",
+              "RelativeDocumentMoniker": "Domain\\Migrations\\20250415035526_initial.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Migrations\\20250415035526_initial.cs",
+              "RelativeToolTip": "Domain\\Migrations\\20250415035526_initial.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T03:46:32.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplyJobRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\ApplyJobRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\ApplyJobRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\ApplyJobRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\ApplyJobRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T03:46:10.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SystemUser.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\SystemUser.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\SystemUser.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\SystemUser.cs",
-              "RelativeToolTip": "Domain\\Models\\SystemUser.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T03:32:15.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InterviewSchedule.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\InterviewSchedule.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\InterviewSchedule.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\InterviewSchedule.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\InterviewSchedule.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:19:28.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T03:55:26.613Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HireHorizonApiDbContext.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\HireHorizonApiDbContext.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\HireHorizonApiDbContext.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\HireHorizonApiDbContext.cs",
-              "RelativeToolTip": "Domain\\Models\\HireHorizonApiDbContext.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAcwDcAAAAAAAAAAAAAAA==",
+              "Title": "SaveJobRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\SaveJobRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\SaveJobRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\SaveJobRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\SaveJobRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T03:49:20.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T03:46:32.986Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "SignUpRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\SignUpRequest.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\SignUpRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\SignUpRequest.cs",
-              "RelativeToolTip": "Domain\\Models\\SignUpRequest.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAArwBUAAAAqAAAAAAAAAA==",
+              "Title": "ApplyJobRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\ApplyJobRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\ApplyJobRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\ApplyJobRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\ApplyJobRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T08:44:34.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T03:46:10.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddCompanyUserRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyUserRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyUserRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyUserRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "SystemUser.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\SystemUser.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\SystemUser.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\SystemUser.cs",
+              "RelativeToolTip": "Domain\\Models\\SystemUser.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:17:55.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T03:32:15.746Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AddCompanyRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyRequest.cs",
+              "Title": "InterviewSchedule.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\InterviewSchedule.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\InterviewSchedule.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\InterviewSchedule.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\InterviewSchedule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:17:03.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T02:19:28.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HireHorizonApiDbContext.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\HireHorizonApiDbContext.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\HireHorizonApiDbContext.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\HireHorizonApiDbContext.cs",
+              "RelativeToolTip": "Domain\\Models\\HireHorizonApiDbContext.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAcwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:49:20.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignUpRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\SignUpRequest.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\SignUpRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\SignUpRequest.cs",
+              "RelativeToolTip": "Domain\\Models\\SignUpRequest.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAArwBUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T08:44:34.826Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "JobPostRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobPostRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobPostRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobPostRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobPostRequest.cs",
+              "Title": "AddCompanyUserRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyUserRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyUserRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyUserRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyUserRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:15:35.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T02:17:55.617Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "IndustryRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\IndustryRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\IndustryRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\IndustryRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\IndustryRequest.cs",
+              "Title": "AddCompanyRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\AddCompanyRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:11:33.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T02:17:03.647Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "SkillRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\SkillRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\SkillRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\SkillRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\SkillRequest.cs",
+              "Title": "JobPostRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobPostRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobPostRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobPostRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobPostRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:10:52.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T02:15:35.687Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "LocationRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\LocationRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\LocationRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\LocationRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\LocationRequest.cs",
+              "Title": "IndustryRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\IndustryRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\IndustryRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\IndustryRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\IndustryRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:10:14.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T02:11:33.926Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "CategoryRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\CategoryRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\CategoryRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\CategoryRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\CategoryRequest.cs",
+              "Title": "SkillRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\SkillRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\SkillRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\SkillRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\SkillRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T02:09:37.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "JobInterview.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\JobInterview.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\JobInterview.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\JobInterview.cs",
-              "RelativeToolTip": "Domain\\Models\\JobInterview.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:40:13.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SavedJob.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\SavedJob.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\SavedJob.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\SavedJob.cs",
-              "RelativeToolTip": "Domain\\Models\\SavedJob.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:37:03.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T02:10:52.736Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "AdminLoginRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\AdminLoginRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\AdminLoginRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\AdminLoginRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\AdminLoginRequest.cs",
+              "Title": "LocationRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\LocationRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\LocationRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\LocationRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\LocationRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T20:45:38.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T02:10:14.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoryRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\CategoryRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\CategoryRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\CategoryRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\CategoryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T02:09:37.283Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "JobApplication.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\JobApplication.cs",
-              "RelativeDocumentMoniker": "Domain\\Models\\JobApplication.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Models\\JobApplication.cs",
-              "RelativeToolTip": "Domain\\Models\\JobApplication.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwBsAAAAIAAAAAAAAAA==",
+              "Title": "JobInterview.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\JobInterview.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\JobInterview.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\JobInterview.cs",
+              "RelativeToolTip": "Domain\\Models\\JobInterview.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:33:37.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T01:40:13.891Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "JobSeekerController.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\JobSeekerController.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\JobSeekerController.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\JobSeekerController.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\JobSeekerController.cs",
+              "Title": "SavedJob.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\SavedJob.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\SavedJob.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\SavedJob.cs",
+              "RelativeToolTip": "Domain\\Models\\SavedJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T01:37:03.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdminLoginRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\AdminLoginRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\RequestObjects\\AdminLoginRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\RequestObjects\\AdminLoginRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\RequestObjects\\AdminLoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:18:44.883Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T20:45:38.68Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "JobProviderController.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\JobProviderController.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\JobProviderController.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\JobProviderController.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\JobProviderController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "JobApplication.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\JobApplication.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\JobApplication.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Models\\JobApplication.cs",
+              "RelativeToolTip": "Domain\\Models\\JobApplication.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwBsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:17:46.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T01:33:37.252Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\AdminController.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\AdminController.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\AdminController.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\AdminController.cs",
+              "Title": "JobSeekerController.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\JobSeekerController.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\JobSeekerController.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\JobSeekerController.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\JobSeekerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:16:34.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T01:18:44.883Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "JobSeekerSignUpRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerSignUpRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerSignUpRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerSignUpRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerSignUpRequest.cs",
+              "Title": "JobProviderController.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\JobProviderController.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\JobProviderController.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\JobProviderController.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\JobProviderController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:14:32.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T01:17:46.255Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "JobSeekerLoginRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerLoginRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerLoginRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerLoginRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerLoginRequest.cs",
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\AdminController.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\Admin\\AdminController.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\Admin\\AdminController.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\Admin\\AdminController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:13:35.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T01:16:34.5Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "JobProviderSignUpRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderSignUpRequest.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderSignUpRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderSignUpRequest.cs",
-              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderSignUpRequest.cs",
+              "Title": "JobSeekerSignUpRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerSignUpRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerSignUpRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerSignUpRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerSignUpRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:11:34.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T01:14:32.933Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "JobSeekerLoginRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerLoginRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerLoginRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerLoginRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobSeeker\\RequestObjects\\JobSeekerLoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T01:13:35.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "JobProviderSignUpRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderSignUpRequest.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderSignUpRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderSignUpRequest.cs",
+              "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderSignUpRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T01:11:34.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "JobProviderLoginRequest.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderLoginRequest.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderLoginRequest.cs",
               "RelativeDocumentMoniker": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderLoginRequest.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderLoginRequest.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderLoginRequest.cs",
               "RelativeToolTip": "HireHorizonAPI\\API\\JobProvider\\RequestObjects\\JobProviderLoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T01:10:08.794Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T01:10:08.794Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "JobInterviewStatus.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\JobInterviewStatus.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\JobInterviewStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\JobInterviewStatus.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\JobInterviewStatus.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\JobInterviewStatus.cs",
               "RelativeToolTip": "Domain\\Enums\\JobInterviewStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T15:55:35.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T15:55:35.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "JobApplicationStatus.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\JobApplicationStatus.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\JobApplicationStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\JobApplicationStatus.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\JobApplicationStatus.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\JobApplicationStatus.cs",
               "RelativeToolTip": "Domain\\Enums\\JobApplicationStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:33:59.581Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T13:33:59.581Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "ApplicationServiceExtension.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Extensions\\ApplicationServiceExtension.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Extensions\\ApplicationServiceExtension.cs",
               "RelativeDocumentMoniker": "Domain\\Extensions\\ApplicationServiceExtension.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Extensions\\ApplicationServiceExtension.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Extensions\\ApplicationServiceExtension.cs",
               "RelativeToolTip": "Domain\\Extensions\\ApplicationServiceExtension.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -521,88 +510,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "HireHorizonAPI.csproj",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\HireHorizonAPI.csproj",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\HireHorizonAPI.csproj",
               "RelativeDocumentMoniker": "HireHorizonAPI\\HireHorizonAPI.csproj",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\HireHorizonAPI.csproj",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\HireHorizonAPI.csproj",
               "RelativeToolTip": "HireHorizonAPI\\HireHorizonAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-10T03:41:01.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-10T03:41:01.554Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "MessageStatus.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\MessageStatus.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\MessageStatus.cs",
               "RelativeDocumentMoniker": "Domain\\Enums\\MessageStatus.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\MessageStatus.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\MessageStatus.cs",
               "RelativeToolTip": "Domain\\Enums\\MessageStatus.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T16:06:12.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Status.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\Status.cs",
-              "RelativeDocumentMoniker": "Domain\\Enums\\Status.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\Status.cs",
-              "RelativeToolTip": "Domain\\Enums\\Status.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:28:41.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T16:06:12.723Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\Roles.cs",
-              "RelativeDocumentMoniker": "Domain\\Enums\\Roles.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Enums\\Roles.cs",
-              "RelativeToolTip": "Domain\\Enums\\Roles.cs",
+              "Title": "Status.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\Status.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\Status.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\Status.cs",
+              "RelativeToolTip": "Domain\\Enums\\Status.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T13:27:11.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T13:28:41.789Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\Program.cs",
-              "RelativeDocumentMoniker": "HireHorizonAPI\\Program.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\Program.cs",
-              "RelativeToolTip": "HireHorizonAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Title": "Roles.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\Roles.cs",
+              "RelativeDocumentMoniker": "Domain\\Enums\\Roles.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Enums\\Roles.cs",
+              "RelativeToolTip": "Domain\\Enums\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T06:35:09.728Z"
+              "WhenOpened": "2025-04-14T13:27:11.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Domain.csproj",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Domain.csproj",
-              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Domain.csproj",
-              "RelativeToolTip": "Domain\\Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-10T03:38:45.578Z",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\Program.cs",
+              "RelativeDocumentMoniker": "HireHorizonAPI\\Program.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\Program.cs",
+              "RelativeToolTip": "HireHorizonAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T06:35:09.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 32,
+              "Title": "Domain.csproj",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-10T03:38:45.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\appsettings.json",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\appsettings.json",
               "RelativeDocumentMoniker": "HireHorizonAPI\\appsettings.json",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\HireHorizonAPI\\appsettings.json",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\HireHorizonAPI\\appsettings.json",
               "RelativeToolTip": "HireHorizonAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -610,11 +595,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Class1.cs",
+              "DocumentMoniker": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Class1.cs",
               "RelativeDocumentMoniker": "Domain\\Class1.cs",
-              "ToolTip": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Class1.cs",
+              "ToolTip": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Class1.cs",
               "RelativeToolTip": "Domain\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
