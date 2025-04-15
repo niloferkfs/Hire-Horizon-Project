@@ -13,3 +13,18 @@ D:\git\.NetCore-FS-15\Chapter 10\Students\Nilofer\Activity\HireHorizonAPI\Domain
 D:\git\.NetCore-FS-15\Chapter 10\Students\Nilofer\Activity\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.pdb
 D:\git\.NetCore-FS-15\Chapter 10\Students\Nilofer\Activity\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
 D:\git\.NetCore-FS-15\Chapter 10\Students\Nilofer\Activity\HireHorizonAPI\Domain\obj\Debug\net8.0\ref\Domain.dll
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+D:\git\PROJECT\HireHorizonAPI\Domain\bin\Debug\net8.0\Domain.deps.json
+D:\git\PROJECT\HireHorizonAPI\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+D:\git\PROJECT\HireHorizonAPI\Domain\bin\Debug\net8.0\Domain.dll
+D:\git\PROJECT\HireHorizonAPI\Domain\bin\Debug\net8.0\Domain.pdb
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.dll
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\refint\Domain.dll
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.pdb
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+D:\git\PROJECT\HireHorizonAPI\Domain\obj\Debug\net8.0\ref\Domain.dll

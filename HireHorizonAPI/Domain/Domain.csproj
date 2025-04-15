@@ -7,18 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Helpers\" />
-    <Folder Include="Services\Login\" />
-    <Folder Include="Services\SignUp\" />
+    <Folder Include="Services\JobProvider\Interfaces\" />
+    <Folder Include="Services\Login\Dto\" />
+    <Folder Include="Services\Login\Interface\" />
+    <Folder Include="Services\SignUp\Dto\" />
+    <Folder Include="Services\SignUp\Interface\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="MailKit" Version="4.11.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="MimeKit" Version="4.11.0" />
   </ItemGroup>
 
 </Project>
