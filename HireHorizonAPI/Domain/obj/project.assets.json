@@ -4722,23 +4722,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Users\\ayush\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\git\\.NetCore-FS-15\\Chapter 10\\Students\\Nilofer\\Activity\\HireHorizonAPI\\Domain\\obj\\",
+      "projectPath": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\ayush\\.nuget\\packages\\",
+      "outputPath": "D:\\Hire-Horizon-Project\\HireHorizonAPI\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ayush\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
