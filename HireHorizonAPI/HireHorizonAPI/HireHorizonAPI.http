@@ -1,6 +1,0 @@
-@HireHorizonAPI_HostAddress = http://localhost:5283
-
-GET {{HireHorizonAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
