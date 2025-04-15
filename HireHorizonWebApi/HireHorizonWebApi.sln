@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireHorizonWebApi", "HireHorizonWebApi\HireHorizonWebApi.csproj", "{8CF50F74-20DC-42FD-A91E-5147D25B9370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6129FCA4-1C94-4C29-A7FE-E78D554160D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CF50F74-20DC-42FD-A91E-5147D25B9370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF50F74-20DC-42FD-A91E-5147D25B9370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF50F74-20DC-42FD-A91E-5147D25B9370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF50F74-20DC-42FD-A91E-5147D25B9370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6129FCA4-1C94-4C29-A7FE-E78D554160D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6129FCA4-1C94-4C29-A7FE-E78D554160D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6129FCA4-1C94-4C29-A7FE-E78D554160D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6129FCA4-1C94-4C29-A7FE-E78D554160D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
