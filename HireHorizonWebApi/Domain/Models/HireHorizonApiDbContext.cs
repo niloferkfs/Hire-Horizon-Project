@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Domain.Models;
+
 using Microsoft.EntityFrameworkCore;
 
-namespace HireHorizonAPI.Models;
+namespace Domain.Models;
 
 public partial class HireHorizonApiDbContext : DbContext
 {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Services.SignUp
+namespace Domain.Services.Login
 {
-    internal class SignUpRequestService
+    internal class JobProviderLoginRepository
     {
     }
 }

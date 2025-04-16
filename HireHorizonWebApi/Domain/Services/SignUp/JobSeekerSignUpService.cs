@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Services.SignUp
 {
-    internal class SignUpRequestRepository
+    internal class JobSeekerSignUpService
     {
     }
 }
