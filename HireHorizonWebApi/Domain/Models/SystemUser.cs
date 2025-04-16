@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Domain.Enums;
 
-namespace HireHorizonAPI.Models;
+namespace Domain.Models;
 
 public partial class SystemUser
 {

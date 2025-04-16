@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HireHorizonAPI.Models;
+namespace Domain.Models;
 
 public partial class JobPost
 {

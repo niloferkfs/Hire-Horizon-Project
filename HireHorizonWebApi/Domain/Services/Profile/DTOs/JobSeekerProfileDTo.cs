@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Domain.Models;
-using HireHorizonAPI.Models;
+
 
 namespace Domain.Service.Profile.DTOs
 {

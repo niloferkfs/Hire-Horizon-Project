@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Services.Login
 {
-    internal class LoginService
+    internal class JobSeekerLoginService
     {
     }
 }

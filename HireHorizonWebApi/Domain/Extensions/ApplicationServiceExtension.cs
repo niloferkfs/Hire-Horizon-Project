@@ -16,7 +16,7 @@ using Domain.Service.Profile;
 using Domain.Service.User.Interface;
 using Domain.Service.User;
 using Domain.Services.Email;
-using HireHorizonAPI.Models;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;

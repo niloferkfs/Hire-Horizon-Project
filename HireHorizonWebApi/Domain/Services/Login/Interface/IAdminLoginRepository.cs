@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Services.Login
+namespace Domain.Services.Login.Interface
 {
-    internal class LoginRepository
+    internal interface IAdminLoginRepository
     {
     }
 }
