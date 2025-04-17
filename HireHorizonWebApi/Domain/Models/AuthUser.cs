@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HireHorizonAPI.Models;
+namespace Domain.Models;
 
-public partial class AuthUser
+public partial class AuthUser : SystemUser
 {
     [Key]
     [ForeignKey("SystemUser")]  

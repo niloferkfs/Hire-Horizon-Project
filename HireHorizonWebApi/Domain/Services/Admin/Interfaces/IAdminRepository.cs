@@ -1,6 +1,7 @@
 ﻿using Domain.Helpers;
 using Domain.Models;
 using Domain.Service.Admin.DTOs;
+using Org.BouncyCastle.Bcpg.OpenPgp;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,9 @@ namespace Domain.Service.Admin.Interfaces
 {
     public interface IAdminRepository
     {
-      
 
-        
+
+        public List<Domain.Models.JobSeeker> GetJobSeekers();
 
 
       

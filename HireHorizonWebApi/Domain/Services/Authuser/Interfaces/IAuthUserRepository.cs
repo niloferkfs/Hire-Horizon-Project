@@ -9,6 +9,14 @@ namespace Domain.Service.Authuser.Interfaces
 {
     public interface IAuthUserRepository
     {
-       
+       Task<AuthUser> AddAuthUserJobProvider(AuthUser authUser);
+        string? CreateToken(AuthUser user);
+        CompanyUser GetUser(Guid userid);
+        Task AddUserConnectionIdAsync(string email, string Connectionid);  
+        AuthUser GetUserByConnectionId(string connectionId);
+        Task<AuthUser> GetAuthUserByUserEmail(string user);
+        void DisconnectUserByConnectionId(string connectionId);
+        Task<AuthUser> GetAuthUserByUserId(Guid value);
+
     }
 }
