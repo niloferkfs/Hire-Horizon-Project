@@ -14,7 +14,35 @@ namespace Domain.Service.Admin.Interfaces
     {
 
 
-        public List<Domain.Models.JobSeeker> GetJobSeekers();
+        public Task<List<Domain.Models.JobSeeker>> GetJobSeekers();
+
+        public Task<List<JobProviderCompany>> GetCompanies();
+
+        public Task<List<JobPost>> GetAllJobs();
+
+        public Task<List<Location>> GetLocations();
+
+        public Task<Location> AddLocation(Location location);
+
+        public void DeleteLocationById(Guid id);
+
+        public Task<Skill> AddSkill(Skill skill);
+
+        public Task<bool> DeleteSkill(Guid skillId);
+
+        public Task<JobCategory> AddCategory(JobCategory category);
+
+        public Task<bool> DeleteCategoryById(Guid CategoryId);
+        public Task<Industry> AddIndustry(Industry industry);
+        public Task<bool> DeleteIndustryById(Guid IndustryId); 
+
+        public int GetJobProviderCount();
+        public int GetCompanyCount();
+        public int GetJobCount();
+        public Task<List<JobProviderCompany>> SearchCompanies(string name);
+
+
+
 
 
       

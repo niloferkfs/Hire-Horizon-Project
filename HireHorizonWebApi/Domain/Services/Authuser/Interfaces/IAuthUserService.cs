@@ -10,7 +10,8 @@ namespace Domain.Service.Authuser.Interfaces
 {
 	public interface IAuthUserService
 	{
-		
 
-	}
+        string GetUserId();
+
+    }
 }

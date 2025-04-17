@@ -9,6 +9,8 @@ namespace Domain.Service.Authuser.Interfaces
 {
     public interface IAuthUserRepository
     {
-       
+        string? CreateToken(AuthUser user);
     }
+
 }
+
