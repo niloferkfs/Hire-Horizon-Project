@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Domain.Models;
 using Domain.Service.Authuser.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -14,6 +15,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Service.Authuser
 {
+<<<<<<< HEAD
     public class AuthUserRepository : IAuthUserRepository
     {
         protected readonly HireHorizonApiDbContext _context;
@@ -34,20 +36,45 @@ namespace Domain.Service.Authuser
             _context.SaveChanges();
             return authUser;
 
+=======
+    public class AuthUserRepository:IAuthUserRepository
+    {
+        private readonly HireHorizonApiDbContext _context;
+        private readonly IMapper _mapper;
+        private readonly IConfiguration _configuration;
+
+        public AuthUserRepository(HireHorizonApiDbContext context, IMapper mapper, IConfiguration configuration)
+        {
+            _context = context;
+            _mapper = mapper;
+            _configuration = configuration;
+>>>>>>> 1019875f1cd5d1f28b552c6df0b924478a2aef62
         }
 
         public string? CreateToken(AuthUser user)
         {
             if (user == null)
             {
+<<<<<<< HEAD
                 throw new ArgumentNullException(nameof(user));
+=======
+                
+                throw new ArgumentNullException(nameof(user), "User object cannot be null.");
+>>>>>>> 1019875f1cd5d1f28b552c6df0b924478a2aef62
             }
             string tokenSecret = _configuration.GetSection("AuthSettings:Token").Value;
             if (string.IsNullOrEmpty(tokenSecret))
             {
+<<<<<<< HEAD
 
                 throw new InvalidOperationException("Token secret is missing or empty in configuration.");
             }
+=======
+                
+                throw new InvalidOperationException("Token secret is missing or empty in configuration.");
+            }
+
+>>>>>>> 1019875f1cd5d1f28b552c6df0b924478a2aef62
             List<Claim> claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.FirstName),
@@ -69,6 +96,7 @@ namespace Domain.Service.Authuser
 
             return jwt;
         }
+<<<<<<< HEAD
         public CompanyUser GetUser(Guid userid)
         {
             return _context.CompanyUsers.Where(e=>e.Id == userid).FirstOrDefault();
@@ -79,3 +107,9 @@ namespace Domain.Service.Authuser
         }
         }
     }
+=======
+
+       
+    }
+}
+>>>>>>> 1019875f1cd5d1f28b552c6df0b924478a2aef62
