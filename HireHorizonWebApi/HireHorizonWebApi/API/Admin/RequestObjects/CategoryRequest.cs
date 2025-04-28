@@ -1,4 +1,4 @@
-﻿namespace HireHorizonAPI.API.Admin.RequestObjects
+﻿namespace HireHorizonWebApi.API.Admin.RequestObjects
 {
     public class CategoryRequest
     {

@@ -6,10 +6,13 @@ namespace Domain.Models;
 public partial class CompanyUser
 {
     public Guid Id { get; set; }
-
+    public string FirstName { get; set; } = null!;
+    public string? LastName { get; set; }
+    public Enums.Roles Roles { get; set; }
+    public string? UserName { get; set; }
+    public string Email { get; set; } = null!;
+    public string Phone { get; set; } = null!;
     public Guid? Company { get; set; }
-
     public virtual JobProviderCompany? CompanyNavigation { get; set; }
-
     public virtual ICollection<JobPost> JobPosts { get; set; } = new List<JobPost>();
 }

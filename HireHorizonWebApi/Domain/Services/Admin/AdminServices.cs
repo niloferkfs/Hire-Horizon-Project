@@ -66,9 +66,9 @@ namespace Domain.Service.Admin
             return await adminRepository.DeleteIndustryById(IndustryId);
         }
 
-        public void DeleteLocationById(Guid id)
+        public async Task<bool> DeleteLocationById(Guid id)
         {
-            adminRepository.DeleteLocationById(id);
+            return await adminRepository.DeleteLocationById(id);
         }
 
         public async Task<bool> DeleteSkill(Guid skillId)
@@ -79,42 +79,52 @@ namespace Domain.Service.Admin
         public async Task<List<Joblist>> GetAllJobs()
         {
             var jobs= await adminRepository.GetAllJobs();
-            return mapper.Map<Joblist>(jobs);
+            return mapper.Map<List<Joblist>>(jobs);
         }
 
-        public Task<List<JobProviderCompany>> GetCompanies()
+        public async Task<List<JobProviderCompany>> GetCompanies()
         {
-            throw new NotImplementedException();
+            var companies = await adminRepository.GetCompanies();
+            return mapper.Map<List<JobProviderCompany>>(companies);
         }
 
         public int GetCompanyCount()
         {
-            throw new NotImplementedException();
+            return adminRepository.GetCompanyCount();
         }
 
         public int GetJobCount()
         {
-            throw new NotImplementedException();
+            return adminRepository.GetJobCount();
         }
 
         public int GetJobProviderCount()
         {
-            throw new NotImplementedException();
+            return adminRepository.GetJobProviderCount();
         }
 
-        public Task<List<JobSeekerDto>> GetJobSeekers()
+        public async Task<List<Joblist>> GetJobsByTitle(string JobTitle)
         {
-            throw new NotImplementedException();
+            var jobs = await adminRepository.GetJobsbyTitle(JobTitle);
+            return mapper.Map<List<Joblist>>(jobs);
         }
 
-        public Task<List<LocationDto>> GetLocations()
+        public async Task<List<JobSeekerDto>> GetJobSeekers()
         {
-            throw new NotImplementedException();
+            var jobseekers= await adminRepository.GetJobSeekers();
+            return mapper.Map<List<JobSeekerDto>>(jobseekers);
         }
 
-        public Task<List<JobProviderCompany>> SearchCompanies(string name)
+        public async Task<List<LocationDto>> GetLocations()
         {
-            throw new NotImplementedException();
+            var locations = await adminRepository.GetLocations();
+            return mapper.Map<List<LocationDto>>(locations);
+        }
+
+        public async Task<List<JobProviderCompany>> SearchCompanies(string name)
+        {
+            return await adminRepository.SearchCompanies(name);
+
         }
     }
 }
