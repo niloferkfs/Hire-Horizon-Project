@@ -8,14 +8,18 @@ using Domain.Service.Admin.Interfaces;
 using Domain.Service.Admin;
 using Domain.Service.Authuser.Interfaces;
 using Domain.Service.Authuser;
-
+using Domain.Service.Job.Interfaces;
+using Domain.Service.Job;
+using Domain.Service.JobProvider;
+using Domain.Service.Profile.Interface;
+using Domain.Service.Profile;
+using Domain.Service.User.Interface;
+using Domain.Service.User;
 using Domain.Services.Email;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Domain.Services.Login.Interface;
-using Domain.Services.Login;
 
 namespace Domain.Extensions
 {
@@ -26,19 +30,7 @@ namespace Domain.Extensions
             services.AddDbContext<HireHorizonApiDbContext>(options =>
             options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
 
-<<<<<<< HEAD
             //services.AddTransient<IEmailService, EmailService>();
-=======
-            services.AddTransient<IEmailService, EmailService>();
-
-            services.AddScoped<IAdminRepository, AdminRepository>();
-            services.AddScoped<IAdminServices, AdminServices>();
-            services.AddScoped<IAdminLoginRepository, AdminLoginRepository>();
-            services.AddScoped<IAdminLoginService, AdminLoginService>();
-            services.AddScoped<IAuthUserRepository, AuthUserRepository>();
-            services.AddScoped<IAuthUserService, AuthUserService>();
-            
->>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
             
 
 

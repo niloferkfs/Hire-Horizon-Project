@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace HireHorizonWebApi.API.Admin.RequestObjects
+namespace HireHorizonAPI.API.Admin.RequestObjects
 {
     public class AdminLoginRequest
     {

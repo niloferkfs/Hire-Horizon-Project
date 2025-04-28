@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domain.Migrations
 {
     [DbContext(typeof(HireHorizonApiDbContext))]
-    [Migration("20250424175601_updated1")]
-    partial class updated1
+    [Migration("20250415075454_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,44 +24,6 @@ namespace Domain.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("Domain.Models.CompanyUser", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("Company")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CompanyNavigationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CompanyNavigationId");
-
-                    b.ToTable("CompanyUsers");
-                });
-
-            modelBuilder.Entity("Domain.Models.Industry", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Industries");
-                });
 
             modelBuilder.Entity("Domain.Models.JobApplication", b =>
                 {
@@ -99,324 +61,41 @@ namespace Domain.Migrations
                     b.ToTable("JobApplications");
                 });
 
-            modelBuilder.Entity("Domain.Models.JobCategory", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("JobCategories");
-                });
-
             modelBuilder.Entity("Domain.Models.JobInterview", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("ApplicationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CompanyId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("Date")
+                    b.Property<DateTime>("DateScheduled")
                         .HasColumnType("datetime2");
+
+                    b.Property<Guid>("IntervieweeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("JobApplicationId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("JobId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("SheduledBy")
+                    b.Property<Guid>("ScheduledById")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("interviewee")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("ApplicationId");
+                    b.HasIndex("IntervieweeId");
 
-                    b.HasIndex("CompanyId");
+                    b.HasIndex("JobApplicationId");
 
                     b.HasIndex("JobId");
 
-                    b.HasIndex("SheduledBy");
-
-                    b.HasIndex("interviewee");
+                    b.HasIndex("ScheduledById");
 
                     b.ToTable("JobInterviews");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobPost", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CategoryId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("CompanyId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("IndustryId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("JobSummary")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("JobTitle")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("LocationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("PostedById")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("PostedDate")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("CompanyId");
-
-                    b.HasIndex("IndustryId");
-
-                    b.HasIndex("LocationId");
-
-                    b.HasIndex("PostedById");
-
-                    b.ToTable("JobPosts");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobProviderCompany", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("Industry")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("IndustryNavigationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("LegalName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("Location")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("LocationNavigationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<long>("Phone")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("Summary")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Website")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IndustryNavigationId");
-
-                    b.HasIndex("LocationNavigationId");
-
-                    b.ToTable("JobProviderCompanies");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobResponsibility", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("JobPost")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("JobPostNavigationId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("JobPostNavigationId");
-
-                    b.ToTable("JobResponsibilities");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobSeeker", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("JobSeekers");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobSeekerProfile", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("ProfileName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ProfileSummary")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("ResumeId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("SkillId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ResumeId");
-
-                    b.HasIndex("SkillId");
-
-                    b.ToTable("JobSeekerProfiles");
-                });
-
-            modelBuilder.Entity("Domain.Models.Location", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Locations");
-                });
-
-            modelBuilder.Entity("Domain.Models.Qualification", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid?>("JobPostId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("JobseekerProfileId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("JobPostId");
-
-                    b.ToTable("Qualifications");
-                });
-
-            modelBuilder.Entity("Domain.Models.Resume", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<byte[]>("File")
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Resumes");
-                });
-
-            modelBuilder.Entity("Domain.Models.Role", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Roles");
                 });
 
             modelBuilder.Entity("Domain.Models.SavedJob", b =>
@@ -475,59 +154,6 @@ namespace Domain.Migrations
                     b.ToTable("SignUpRequests");
                 });
 
-            modelBuilder.Entity("Domain.Models.Skill", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Skills");
-                });
-
-            modelBuilder.Entity("Domain.Models.SystemUser", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Role")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SystemUsers");
-
-                    b.UseTptMappingStrategy();
-                });
-
             modelBuilder.Entity("Domain.Models.User", b =>
                 {
                     b.Property<Guid>("UserId")
@@ -562,7 +188,389 @@ namespace Domain.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("Domain.Models.WorkExperience", b =>
+            modelBuilder.Entity("HireHorizonAPI.Models.AuthUser", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AuthUsers");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.CompanyUser", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("Company")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("CompanyNavigationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CompanyNavigationId");
+
+                    b.ToTable("CompanyUsers");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.Industry", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Industries");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobCategory", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("JobCategories");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobPost", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("Category")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("Company")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("Industry")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("JobLocation")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("JobLocationNavigationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("JobSummary")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("JobTitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("PostedBy")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PostedByNavigationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("PostedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("JobLocationNavigationId");
+
+                    b.HasIndex("PostedByNavigationId");
+
+                    b.ToTable("JobPosts");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobProviderCompany", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("Industry")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("LegalName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("Location")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("LocationNavigationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<long>("Phone")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Summary")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Website")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LocationNavigationId");
+
+                    b.ToTable("JobProviderCompanies");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobResponsibility", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("JobPost")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("JobPostNavigationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("JobPostNavigationId");
+
+                    b.ToTable("JobResponsibilities");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobSeeker", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("JobSeekers");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobSeekerProfile", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ProfileName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProfileSummary")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("ResumeId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ResumeId");
+
+                    b.ToTable("JobSeekerProfiles");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.Location", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Discription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Locations");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.Qualification", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("JobPostId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("JobseekerProfileId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("JobPostId");
+
+                    b.ToTable("Qualifications");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.Resume", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<byte[]>("File")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Resumes");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.Role", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.Skill", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("JobPost")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("JobPostNavigationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("JobSeekerProfileId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("JobPostNavigationId");
+
+                    b.ToTable("Skills");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.SystemUser", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SystemUsers");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.WorkExperience", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -596,41 +604,21 @@ namespace Domain.Migrations
                     b.ToTable("WorkExperiences");
                 });
 
-            modelBuilder.Entity("Domain.Models.AuthUser", b =>
-                {
-                    b.HasBaseType("Domain.Models.SystemUser");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.ToTable("AuthUser");
-                });
-
-            modelBuilder.Entity("Domain.Models.CompanyUser", b =>
-                {
-                    b.HasOne("Domain.Models.JobProviderCompany", "CompanyNavigation")
-                        .WithMany("CompanyUsers")
-                        .HasForeignKey("CompanyNavigationId");
-
-                    b.Navigation("CompanyNavigation");
-                });
-
             modelBuilder.Entity("Domain.Models.JobApplication", b =>
                 {
-                    b.HasOne("Domain.Models.JobSeeker", "Applicant")
+                    b.HasOne("HireHorizonAPI.Models.JobSeeker", "Applicant")
                         .WithMany()
                         .HasForeignKey("ApplicantId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Models.JobPost", "JobPost")
+                    b.HasOne("HireHorizonAPI.Models.JobPost", "JobPost")
                         .WithMany()
                         .HasForeignKey("JobPostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Models.Resume", "Resume")
+                    b.HasOne("HireHorizonAPI.Models.Resume", "Resume")
                         .WithMany()
                         .HasForeignKey("ResumeId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -645,135 +633,44 @@ namespace Domain.Migrations
 
             modelBuilder.Entity("Domain.Models.JobInterview", b =>
                 {
-                    b.HasOne("Domain.Models.JobApplication", "Application")
+                    b.HasOne("HireHorizonAPI.Models.JobSeeker", "Interviewee")
                         .WithMany()
-                        .HasForeignKey("ApplicationId");
-
-                    b.HasOne("Domain.Models.JobProviderCompany", "Company")
-                        .WithMany()
-                        .HasForeignKey("CompanyId")
+                        .HasForeignKey("IntervieweeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Models.JobPost", "Job")
+                    b.HasOne("Domain.Models.JobApplication", "JobApplication")
+                        .WithMany()
+                        .HasForeignKey("JobApplicationId");
+
+                    b.HasOne("HireHorizonAPI.Models.JobPost", "Job")
                         .WithMany()
                         .HasForeignKey("JobId");
 
-                    b.HasOne("Domain.Models.CompanyUser", "CompanyUser")
+                    b.HasOne("HireHorizonAPI.Models.CompanyUser", "ScheduledBy")
                         .WithMany()
-                        .HasForeignKey("SheduledBy");
+                        .HasForeignKey("ScheduledById")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Domain.Models.JobSeeker", "Jobseeker")
-                        .WithMany()
-                        .HasForeignKey("interviewee");
-
-                    b.Navigation("Application");
-
-                    b.Navigation("Company");
-
-                    b.Navigation("CompanyUser");
+                    b.Navigation("Interviewee");
 
                     b.Navigation("Job");
 
-                    b.Navigation("Jobseeker");
-                });
+                    b.Navigation("JobApplication");
 
-            modelBuilder.Entity("Domain.Models.JobPost", b =>
-                {
-                    b.HasOne("Domain.Models.JobCategory", "CategoryNavigation")
-                        .WithMany("JobPosts")
-                        .HasForeignKey("CategoryId");
-
-                    b.HasOne("Domain.Models.JobProviderCompany", "CompanyNavigation")
-                        .WithMany()
-                        .HasForeignKey("CompanyId");
-
-                    b.HasOne("Domain.Models.Industry", "IndustryNavigation")
-                        .WithMany("JobPosts")
-                        .HasForeignKey("IndustryId");
-
-                    b.HasOne("Domain.Models.Location", "LocationNavigation")
-                        .WithMany("JobPosts")
-                        .HasForeignKey("LocationId");
-
-                    b.HasOne("Domain.Models.CompanyUser", "PostedByNavigation")
-                        .WithMany("JobPosts")
-                        .HasForeignKey("PostedById");
-
-                    b.Navigation("CategoryNavigation");
-
-                    b.Navigation("CompanyNavigation");
-
-                    b.Navigation("IndustryNavigation");
-
-                    b.Navigation("LocationNavigation");
-
-                    b.Navigation("PostedByNavigation");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobProviderCompany", b =>
-                {
-                    b.HasOne("Domain.Models.Industry", "IndustryNavigation")
-                        .WithMany("JobProviderCompanies")
-                        .HasForeignKey("IndustryNavigationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.Location", "LocationNavigation")
-                        .WithMany("JobProviderCompanies")
-                        .HasForeignKey("LocationNavigationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("IndustryNavigation");
-
-                    b.Navigation("LocationNavigation");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobResponsibility", b =>
-                {
-                    b.HasOne("Domain.Models.JobPost", "JobPostNavigation")
-                        .WithMany("JobResponsibilities")
-                        .HasForeignKey("JobPostNavigationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("JobPostNavigation");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobSeekerProfile", b =>
-                {
-                    b.HasOne("Domain.Models.Resume", "Resume")
-                        .WithMany("JobSeekerProfiles")
-                        .HasForeignKey("ResumeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Domain.Models.Skill", null)
-                        .WithMany("JobSeekerProfiles")
-                        .HasForeignKey("SkillId");
-
-                    b.Navigation("Resume");
-                });
-
-            modelBuilder.Entity("Domain.Models.Qualification", b =>
-                {
-                    b.HasOne("Domain.Models.JobPost", "JobPost")
-                        .WithMany()
-                        .HasForeignKey("JobPostId");
-
-                    b.Navigation("JobPost");
+                    b.Navigation("ScheduledBy");
                 });
 
             modelBuilder.Entity("Domain.Models.SavedJob", b =>
                 {
-                    b.HasOne("Domain.Models.JobPost", "JobPost")
+                    b.HasOne("HireHorizonAPI.Models.JobPost", "JobPost")
                         .WithMany()
                         .HasForeignKey("JobPostId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Models.JobSeeker", "SavedBy")
+                    b.HasOne("HireHorizonAPI.Models.JobSeeker", "SavedBy")
                         .WithMany()
                         .HasForeignKey("SavedById")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -784,9 +681,101 @@ namespace Domain.Migrations
                     b.Navigation("SavedBy");
                 });
 
-            modelBuilder.Entity("Domain.Models.WorkExperience", b =>
+            modelBuilder.Entity("HireHorizonAPI.Models.AuthUser", b =>
                 {
-                    b.HasOne("Domain.Models.JobSeekerProfile", "JobSeekerProfile")
+                    b.HasOne("HireHorizonAPI.Models.SystemUser", "SystemUser")
+                        .WithMany()
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SystemUser");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.CompanyUser", b =>
+                {
+                    b.HasOne("HireHorizonAPI.Models.JobProviderCompany", "CompanyNavigation")
+                        .WithMany("CompanyUsers")
+                        .HasForeignKey("CompanyNavigationId");
+
+                    b.Navigation("CompanyNavigation");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobPost", b =>
+                {
+                    b.HasOne("HireHorizonAPI.Models.Location", "JobLocationNavigation")
+                        .WithMany("JobPosts")
+                        .HasForeignKey("JobLocationNavigationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("HireHorizonAPI.Models.CompanyUser", "PostedByNavigation")
+                        .WithMany("JobPosts")
+                        .HasForeignKey("PostedByNavigationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("JobLocationNavigation");
+
+                    b.Navigation("PostedByNavigation");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobProviderCompany", b =>
+                {
+                    b.HasOne("HireHorizonAPI.Models.Location", "LocationNavigation")
+                        .WithMany("JobProviderCompanies")
+                        .HasForeignKey("LocationNavigationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("LocationNavigation");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobResponsibility", b =>
+                {
+                    b.HasOne("HireHorizonAPI.Models.JobPost", "JobPostNavigation")
+                        .WithMany("JobResponsibilities")
+                        .HasForeignKey("JobPostNavigationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("JobPostNavigation");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.JobSeekerProfile", b =>
+                {
+                    b.HasOne("HireHorizonAPI.Models.Resume", "Resume")
+                        .WithMany("JobSeekerProfiles")
+                        .HasForeignKey("ResumeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Resume");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.Qualification", b =>
+                {
+                    b.HasOne("HireHorizonAPI.Models.JobPost", "JobPost")
+                        .WithMany()
+                        .HasForeignKey("JobPostId");
+
+                    b.Navigation("JobPost");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.Skill", b =>
+                {
+                    b.HasOne("HireHorizonAPI.Models.JobPost", "JobPostNavigation")
+                        .WithMany("Skills")
+                        .HasForeignKey("JobPostNavigationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("JobPostNavigation");
+                });
+
+            modelBuilder.Entity("HireHorizonAPI.Models.WorkExperience", b =>
+                {
+                    b.HasOne("HireHorizonAPI.Models.JobSeekerProfile", "JobSeekerProfile")
                         .WithMany("WorkExperiences")
                         .HasForeignKey("JobSeekerProfileId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -795,60 +784,36 @@ namespace Domain.Migrations
                     b.Navigation("JobSeekerProfile");
                 });
 
-            modelBuilder.Entity("Domain.Models.AuthUser", b =>
-                {
-                    b.HasOne("Domain.Models.SystemUser", null)
-                        .WithOne()
-                        .HasForeignKey("Domain.Models.AuthUser", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Domain.Models.CompanyUser", b =>
+            modelBuilder.Entity("HireHorizonAPI.Models.CompanyUser", b =>
                 {
                     b.Navigation("JobPosts");
                 });
 
-            modelBuilder.Entity("Domain.Models.Industry", b =>
-                {
-                    b.Navigation("JobPosts");
-
-                    b.Navigation("JobProviderCompanies");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobCategory", b =>
-                {
-                    b.Navigation("JobPosts");
-                });
-
-            modelBuilder.Entity("Domain.Models.JobPost", b =>
+            modelBuilder.Entity("HireHorizonAPI.Models.JobPost", b =>
                 {
                     b.Navigation("JobResponsibilities");
+
+                    b.Navigation("Skills");
                 });
 
-            modelBuilder.Entity("Domain.Models.JobProviderCompany", b =>
+            modelBuilder.Entity("HireHorizonAPI.Models.JobProviderCompany", b =>
                 {
                     b.Navigation("CompanyUsers");
                 });
 
-            modelBuilder.Entity("Domain.Models.JobSeekerProfile", b =>
+            modelBuilder.Entity("HireHorizonAPI.Models.JobSeekerProfile", b =>
                 {
                     b.Navigation("WorkExperiences");
                 });
 
-            modelBuilder.Entity("Domain.Models.Location", b =>
+            modelBuilder.Entity("HireHorizonAPI.Models.Location", b =>
                 {
                     b.Navigation("JobPosts");
 
                     b.Navigation("JobProviderCompanies");
                 });
 
-            modelBuilder.Entity("Domain.Models.Resume", b =>
-                {
-                    b.Navigation("JobSeekerProfiles");
-                });
-
-            modelBuilder.Entity("Domain.Models.Skill", b =>
+            modelBuilder.Entity("HireHorizonAPI.Models.Resume", b =>
                 {
                     b.Navigation("JobSeekerProfiles");
                 });

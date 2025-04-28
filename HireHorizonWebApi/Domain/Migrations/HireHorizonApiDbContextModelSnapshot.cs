@@ -201,11 +201,7 @@ namespace Domain.Migrations
                     b.Property<Guid?>("LocationId")
                         .HasColumnType("uniqueidentifier");
 
-<<<<<<< HEAD
                     b.Property<Guid?>("PostedBy")
-=======
-                    b.Property<Guid?>("PostedById")
->>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("PostedDate")
@@ -221,11 +217,7 @@ namespace Domain.Migrations
 
                     b.HasIndex("LocationId");
 
-<<<<<<< HEAD
                     b.HasIndex("PostedBy");
-=======
-                    b.HasIndex("PostedById");
->>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
 
                     b.ToTable("JobPosts");
                 });
@@ -369,11 +361,7 @@ namespace Domain.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-<<<<<<< HEAD
                     b.Property<string>("Discription")
-=======
-                    b.Property<string>("Description")
->>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -712,11 +700,7 @@ namespace Domain.Migrations
                         .WithMany("JobPosts")
                         .HasForeignKey("CategoryId");
 
-<<<<<<< HEAD
                     b.HasOne("Domain.Models.JobProviderCompany", "CompanyNavigstion")
-=======
-                    b.HasOne("Domain.Models.JobProviderCompany", "CompanyNavigation")
->>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
                         .WithMany()
                         .HasForeignKey("CompanyId");
 
@@ -730,19 +714,11 @@ namespace Domain.Migrations
 
                     b.HasOne("Domain.Models.CompanyUser", "PostedByNavigation")
                         .WithMany("JobPosts")
-<<<<<<< HEAD
                         .HasForeignKey("PostedBy");
 
                     b.Navigation("CategoryNavigation");
 
                     b.Navigation("CompanyNavigstion");
-=======
-                        .HasForeignKey("PostedById");
-
-                    b.Navigation("CategoryNavigation");
-
-                    b.Navigation("CompanyNavigation");
->>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
 
                     b.Navigation("IndustryNavigation");
 
