@@ -7,7 +7,9 @@ public partial class JobCategory
 {
     public Guid Id { get; set; }
 
-    public string? Name { get; set; }
+    public string? Name { get; set; } = null!;
 
-    public string? Description { get; set; }
+    public string? Description { get; set; } = null!;
+
+    public virtual ICollection<JobPost> JobPosts { get; set; } = new List<JobPost>();
 }

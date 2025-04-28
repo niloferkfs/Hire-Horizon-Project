@@ -1,6 +1,7 @@
 using System.Text;
 using Domain.Extensions;
 using Domain.Helpers;
+using HireHorizonWebApi.Extension;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -40,6 +41,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
