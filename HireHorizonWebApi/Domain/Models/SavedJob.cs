@@ -13,7 +13,11 @@ namespace Domain.Models
     {
 
         public Guid Id { get; set; }
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
         [ForeignKey(nameof(JobPost))]
         public Guid JobPostId { get; set; }
         [Required]
@@ -22,7 +26,10 @@ namespace Domain.Models
         public DateTime DateSaved { get; set; }
         public virtual JobPost JobPost { get; set; }
         public virtual JobSeeker JobSeeker { get; set; }
+<<<<<<< HEAD
 
        
+=======
+>>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
     }
 }

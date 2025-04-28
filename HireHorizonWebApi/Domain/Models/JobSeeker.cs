@@ -18,7 +18,11 @@ public partial class JobSeeker
 
     public string Email { get; set; } = null!;
 
+<<<<<<< HEAD
     public Roles Role { get; set; }  //changed 
+=======
+    public Roles Role { get; set; }
+>>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
 
    
 }

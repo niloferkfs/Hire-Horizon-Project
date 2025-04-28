@@ -12,7 +12,11 @@ using System.Threading.Tasks;
 
 namespace Domain.Service.Authuser
 {
+<<<<<<< HEAD
 	public class AuthUserService : IAuthUserService
+=======
+	public class AuthUserService:IAuthUserService
+>>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
 	{
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IAuthUserRepository _userRepository;

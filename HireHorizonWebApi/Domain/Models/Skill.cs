@@ -12,4 +12,9 @@ public partial class Skill
     public string Description { get; set; } = null!;
 
     public virtual ICollection<JobSeekerProfile> JobSeekerProfiles { get; set; } = new List<JobSeekerProfile>();
+<<<<<<< HEAD
+=======
+
+   
+>>>>>>> 37ea8e62c569e5fd8a8074250fc69e1452ed11b3
 }
