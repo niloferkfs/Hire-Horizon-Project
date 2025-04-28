@@ -1,10 +1,13 @@
 using System.Text;
 using Domain.Extensions;
 using Domain.Helpers;
+using HireHorizonWebApi.Extension;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,8 +41,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddServices(builder.Configuration);    ///ayush
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+
+
+
 
 var app = builder.Build();
 

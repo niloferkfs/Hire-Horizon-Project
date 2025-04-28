@@ -30,7 +30,7 @@ namespace Domain.Extensions
             services.AddDbContext<HireHorizonApiDbContext>(options =>
             options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
 
-            services.AddTransient<IEmailService, EmailService>();
+            //services.AddTransient<IEmailService, EmailService>();
             
 
 

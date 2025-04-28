@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Enums;
 
 namespace Domain.Models;
 
@@ -17,7 +18,7 @@ public partial class JobSeeker
 
     public string Email { get; set; } = null!;
 
-    public int Role { get; set; }
+    public Roles Role { get; set; }  //changed 
 
    
 }

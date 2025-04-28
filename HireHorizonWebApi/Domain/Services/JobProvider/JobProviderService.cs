@@ -4,8 +4,6 @@ using Domain.Service.Authuser;
 using Domain.Service.Authuser.Interfaces;
 using Domain.Service.Job;
 using Domain.Service.Job.Interfaces;
-using Domain.Service.JobSeeker;
-using Domain.Service.JobSeeker.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
