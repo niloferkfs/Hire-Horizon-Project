@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Domain.Service.Job.DTOs
 {
-	public class AppliedJobsDtos
+	public class ApplyJobsDto
 	{
-		public AppliedJobsDtos()
+		public ApplyJobsDto()
 		{
 		}
 
-		public AppliedJobsDtos(Guid id, string title)
+		public ApplyJobsDto(Guid id, string title)
 		{
 			Id = id;
 			JobPostJobTitle = title;
