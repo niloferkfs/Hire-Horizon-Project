@@ -9,10 +9,11 @@ namespace Domain.Models;
 public partial class AuthUser:SystemUser
 {
     
+
     public string Password { get; set; } = null!;
 
 
 
-   
+  
 
 }

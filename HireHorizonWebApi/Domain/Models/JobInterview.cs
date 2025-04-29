@@ -30,7 +30,6 @@ namespace Domain.Models
         public virtual CompanyUser? CompanyUser { get; set; }
 
         public virtual JobPost? Job { get; set; }
-
         public virtual JobSeeker? Jobseeker { get; set; }
         public virtual JobApplication? Application { get; set; }
         [ForeignKey(nameof(Company))]
@@ -39,4 +38,3 @@ namespace Domain.Models
 
     }
 }
-

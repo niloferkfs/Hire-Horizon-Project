@@ -1,4 +1,4 @@
-﻿namespace HireHorizonWebApi.API.JobProvider.RequestObjects
+﻿namespace HireHorizonAPI.API.JobProvider.RequestObjects
 {
     public class JobPostRequest
     {

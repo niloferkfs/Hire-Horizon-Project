@@ -17,6 +17,11 @@ public partial class HireHorizonApiDbContext : DbContext
     {
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<SystemUser>().UseTpcMappingStrategy();
+    }
+
     public virtual DbSet<AuthUser> AuthUsers { get; set; }
 
     public virtual DbSet<CompanyUser> CompanyUsers { get; set; }
@@ -59,12 +64,7 @@ public partial class HireHorizonApiDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<SystemUser>().UseTpcMappingStrategy();
-    }
 
 
-
-
+   
 }

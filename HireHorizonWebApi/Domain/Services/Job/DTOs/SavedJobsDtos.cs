@@ -11,8 +11,10 @@ namespace Domain.Service.Job.DTOs
 	public class SavedJobsDtos
 	{
 
-		
+        public Guid JobPostId { get; set; } 
+        public Guid SavedById { get; set; } 
+        public DateTime DateSaved { get; set; } = DateTime.Now;
 
 
-	}
+    }
 }

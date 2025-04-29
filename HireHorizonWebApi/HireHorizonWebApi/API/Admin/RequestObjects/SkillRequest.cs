@@ -1,6 +1,6 @@
-﻿namespace HireHorizonWebApi.API.Admin.RequestObjects
+﻿namespace HireHorizonAPI.API.Admin.RequestObjects
 {
-    public class AddSkillRequest
+    public class SkillRequest
     {
         public string Name { get; set; }
         public string Description { get; set; }
