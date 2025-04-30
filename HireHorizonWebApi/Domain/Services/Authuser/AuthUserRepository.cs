@@ -15,29 +15,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Service.Authuser
 {
-<<<<<<< HEAD
     public class AuthUserRepository : IAuthUserRepository
-    {
-        protected readonly HireHorizonApiDbContext _context;
-        protected readonly IConfiguration _configuration;
-        IMapper _mapper;
-        public AuthUserRepository(HireHorizonApiDbContext context, IConfiguration configuration, IMapper mapper)
-        {
-            _context = context;
-            _configuration = configuration;
-            _mapper = mapper;
-        }
-        public async Task<AuthUser> AddAuthUserJobProvider(AuthUser authUser)
-        {
-            authUser.Role = Enums.Roles.JOBPROVIDER;
-            await _context.AuthUsers.AddAsync(authUser);
-            Models.CompanyUser jobProvider = _mapper.Map<Models.CompanyUser>(authUser);
-            await _context.CompanyUsers.AddAsync(jobProvider);
-            _context.SaveChanges();
-            return authUser;
-
-=======
-    public class AuthUserRepository:IAuthUserRepository
     {
         private readonly HireHorizonApiDbContext _context;
         private readonly IMapper _mapper;
@@ -48,33 +26,33 @@ namespace Domain.Service.Authuser
             _context = context;
             _mapper = mapper;
             _configuration = configuration;
->>>>>>> 1019875f1cd5d1f28b552c6df0b924478a2aef62
+
         }
 
+        public async Task<AuthUser> AddAuthUserJobProvider(AuthUser authUser)
+        {
+            authUser.Role = Enums.Roles.JOBPROVIDER;
+            await _context.AuthUsers.AddAsync(authUser);
+            Models.CompanyUser jobProvider = _mapper.Map<Models.CompanyUser>(authUser);
+            await _context.CompanyUsers.AddAsync(jobProvider);
+            _context.SaveChanges();
+            return authUser;
+        }
         public string? CreateToken(AuthUser user)
         {
             if (user == null)
             {
-<<<<<<< HEAD
-                throw new ArgumentNullException(nameof(user));
-=======
-                
+
                 throw new ArgumentNullException(nameof(user), "User object cannot be null.");
->>>>>>> 1019875f1cd5d1f28b552c6df0b924478a2aef62
             }
             string tokenSecret = _configuration.GetSection("AuthSettings:Token").Value;
             if (string.IsNullOrEmpty(tokenSecret))
             {
-<<<<<<< HEAD
 
                 throw new InvalidOperationException("Token secret is missing or empty in configuration.");
             }
-=======
-                
-                throw new InvalidOperationException("Token secret is missing or empty in configuration.");
-            }
 
->>>>>>> 1019875f1cd5d1f28b552c6df0b924478a2aef62
+
             List<Claim> claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.FirstName),
@@ -96,20 +74,25 @@ namespace Domain.Service.Authuser
 
             return jwt;
         }
-<<<<<<< HEAD
+
         public CompanyUser GetUser(Guid userid)
         {
-            return _context.CompanyUsers.Where(e=>e.Id == userid).FirstOrDefault();
+            return _context.CompanyUsers.Where(e => e.Id == userid).FirstOrDefault();
         }
         public async Task AddUserConnectionIdAsync(string email, string Connectionid)
         {
-
+            
         }
+        public async Task<AuthUser> GetAuthUserByUserEmail(string email)
+        {
+            ;
+            return await _context.AuthUsers.Where(x => x.Email == email).FirstOrDefaultAsync();
         }
-    }
-=======
-
-       
+        public async Task<AuthUser> GetAuthUserByUserId(Guid authUserId)
+        {
+            var authuser = await _context.AuthUsers.Where(e => e.Id == authUserId).FirstOrDefaultAsync();
+            return authuser;
+        }
     }
 }
->>>>>>> 1019875f1cd5d1f28b552c6df0b924478a2aef62
+

@@ -11,9 +11,5 @@ public partial class Skill
 
     public string Description { get; set; } = null!;
 
-    public Guid JobSeekerProfileId { get; set; }
-
-    public Guid JobPost { get; set; }
-
-    public virtual JobPost JobPostNavigation { get; set; } = null!;
+    public virtual ICollection<JobSeekerProfile> JobSeekerProfiles { get; set; } = new List<JobSeekerProfile>();
 }

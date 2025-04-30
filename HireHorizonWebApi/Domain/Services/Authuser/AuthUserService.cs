@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Service.Authuser
 {
-	public class AuthUserService
+	public class AuthUserService : IAuthUserService                                                  
 	{
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IAuthUserRepository _userRepository;
@@ -29,9 +29,17 @@ namespace Domain.Service.Authuser
             if (_httpContextAccessor.HttpContext != null)
             {
                 result = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.Sid).Value.ToString();
-            }
+            }     
             return result;
         }
+        public CompanyUser GetUser(Guid userid)
+        {
+           
+            {
+               return _userRepository.GetUser(userid);
+            }
+           
 
+        }
     }
 }
