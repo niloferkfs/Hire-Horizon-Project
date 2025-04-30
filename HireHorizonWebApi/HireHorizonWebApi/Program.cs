@@ -42,7 +42,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddServices(builder.Configuration);    ///ayush
-
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 
 

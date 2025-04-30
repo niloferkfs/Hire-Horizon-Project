@@ -24,7 +24,7 @@ namespace HireHorizonWebApi.Extension
             CreateMap<AuthUser, SystemUser>().ReverseMap();
             CreateMap<SignUpRequest, SystemUser>().ReverseMap();
             
-            
+            //.ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id));
             CreateMap<JobSeekerLoginDto, AuthUser>().ReverseMap();
             CreateMap<SignUpRequest, AuthUser>().ReverseMap();
             CreateMap<JobSeekerSignUpRequest, JobSeekerSignupRequestDto>().ReverseMap();
@@ -43,7 +43,10 @@ namespace HireHorizonWebApi.Extension
             CreateMap<resumeDto,Resume>().ReverseMap();
             CreateMap<WorkExperienceDto, WorkExperience>().ReverseMap();
 
-            
+
+
+
+            //
             CreateMap<JobSeekerDto, JobSeeker>().ReverseMap();
             CreateMap<CategoryDto, JobCategory>().ReverseMap();
             CreateMap<IndustryDto, Industry>().ReverseMap();
