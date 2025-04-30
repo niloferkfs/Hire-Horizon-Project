@@ -12,6 +12,7 @@ namespace Domain.Models
     public class JobApplication
     {
 
+
         public Guid Id { get; set; }
         [ForeignKey(nameof(JobPost))]
         public Guid JobPostId { get; set; }
@@ -29,9 +30,9 @@ namespace Domain.Models
         public virtual Resume Resume { get; set; }
         public virtual JobSeeker Seeker { get; set; }
         public virtual JobPost JobPost { get; set; }
+    }
 
-     
 
 
     }
-}
+

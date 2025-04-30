@@ -45,7 +45,7 @@ namespace Domain.Service.Admin
             {
                 throw new ArgumentNullException(nameof(industry));
             }
-            if (_context.JobCategories.Any(c => c.Name == industry.Name))
+            if (_context.Industries.Any(c => c.Name == industry.Name))
             {
                 return null;
             }
@@ -61,7 +61,7 @@ namespace Domain.Service.Admin
             {
                 throw new ArgumentNullException(nameof(location));
             }
-            if (_context.JobCategories.Any(c => c.Name == location.Name))
+            if (_context.Locations.Any(c => c.Name == location.Name))
             {
                 return null;
             }
@@ -77,7 +77,7 @@ namespace Domain.Service.Admin
             {
                 throw new ArgumentNullException(nameof(skill));
             }
-            if (_context.JobCategories.Any(c => c.Name == skill.Name))
+            if (_context.Skills.Any(c => c.Name == skill.Name))
             {
                 return null;
             }
@@ -87,19 +87,46 @@ namespace Domain.Service.Admin
             return skill;
         }
 
-        public Task<bool> DeleteCategoryById(Guid CategoryId)
+        public async Task<bool> DeleteCategoryById(Guid CategoryId)
         {
-            throw new NotImplementedException();
+            var CategoryToRemove = await _context.JobCategories.FindAsync(CategoryId);
+            if (CategoryToRemove == null)
+            {
+                return false;
+            }
+
+            _context.JobCategories.Remove(CategoryToRemove);
+            await _context.SaveChangesAsync();
+
+            return true;
         }
 
-        public Task<bool> DeleteIndustryById(Guid IndustryId)
+        public async Task<bool> DeleteIndustryById(Guid IndustryId)
         {
-            throw new NotImplementedException();
+            var IndustryToRemove = await _context.Industries.FindAsync(IndustryId);
+            if (IndustryToRemove == null)
+            {
+                return false;
+            }
+
+            _context.Industries.Remove(IndustryToRemove);
+            await _context.SaveChangesAsync();
+
+            return true;
         }
 
-        public void DeleteLocationById(Guid id)
+        public async Task<bool>  DeleteLocationById(Guid locationId)
         {
-            throw new NotImplementedException();
+            var LocationToRemove = await _context.Locations.FindAsync(locationId);
+            if (LocationToRemove == null)
+            {
+                return false;
+            }
+
+            _context.Locations.Remove(LocationToRemove);
+            await _context.SaveChangesAsync();
+
+            return true;
         }
 
         public async Task<bool> DeleteSkill(Guid skillId)
@@ -149,6 +176,11 @@ namespace Domain.Service.Admin
         public async Task<List<Location>> GetLocations()
         {
             return await _context.Locations.ToListAsync();
+        }
+
+        public async Task<List<JobPost>> GetJobsbyTitle(string JobTitle)
+        {
+            return await _context.JobPosts.Where(e => e.JobTitle.Contains(JobTitle)).ToListAsync();
         }
 
         public async Task<List<JobProviderCompany>> SearchCompanies(string name)

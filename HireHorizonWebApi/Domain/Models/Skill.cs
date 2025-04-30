@@ -12,4 +12,6 @@ public partial class Skill
     public string Description { get; set; } = null!;
 
     public virtual ICollection<JobSeekerProfile> JobSeekerProfiles { get; set; } = new List<JobSeekerProfile>();
+
+   
 }

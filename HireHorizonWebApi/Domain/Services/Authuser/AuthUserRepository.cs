@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Domain.Enums;
 using Domain.Models;
 using Domain.Service.Authuser.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -65,29 +64,6 @@ namespace Domain.Service.Authuser
             return jwt;
         }
 
-
-        public async Task<AuthUser> AddAuthUserJb(AuthUser authUser)
-        {
-            //authUser.Id = Guid.NewGuid();
-            authUser.Role = Roles.JOBSEEKER;
-
-            await _context.AuthUsers.AddAsync(authUser);
-
-            
-            JobSeeker jobSeeker = _mapper.Map<JobSeeker>(authUser);
-
-            await _context.JobSeekers.AddAsync(jobSeeker);
-
-            JobSeekerProfile jp = new()
-            {
-                JobSeekerId = authUser.Id 
-            };
-            await _context.JobSeekerProfiles.AddAsync(jp);
-
-            await _context.SaveChangesAsync();
-
-            return authUser;
-        }
-
+       
     }
 }

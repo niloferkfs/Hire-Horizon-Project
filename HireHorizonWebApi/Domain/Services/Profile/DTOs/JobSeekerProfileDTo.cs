@@ -19,7 +19,7 @@ namespace Domain.Service.Profile.DTOs
 
         public string Phone { get; set; } = null!;
 
-        //public byte[] image { get; set; } = null!;
+        public byte[] image { get; set; } = null!;
         public string Email { get; set; } = null!;
 
         [JsonIgnore]
@@ -29,7 +29,7 @@ namespace Domain.Service.Profile.DTOs
         [JsonIgnore]
         public List<Skill> JobSeekerProfileSkills { get; set; }
 
-        //public int Role { get; set; }
+        public int Role { get; set; }
 
     }
 }
