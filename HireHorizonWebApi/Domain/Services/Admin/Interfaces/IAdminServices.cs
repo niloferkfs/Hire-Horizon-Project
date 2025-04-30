@@ -23,7 +23,7 @@ namespace Domain.Service.Admin.Interfaces
 
         public Task<LocationDto> AddLocation(LocationDto location);
 
-        public void DeleteLocationById(Guid id);
+        public Task<bool> DeleteLocationById(Guid id);
 
         public Task<PostedSkillDTO> AddSkill(PostedSkillDTO skill);
 
@@ -38,6 +38,9 @@ namespace Domain.Service.Admin.Interfaces
         public int GetJobProviderCount();
         public int GetCompanyCount();
         public int GetJobCount();
+
+        public Task<List<Joblist>> GetJobsByTitle(string JobTitle);
+
         public Task<List<JobProviderCompany>> SearchCompanies(string name);
 
 

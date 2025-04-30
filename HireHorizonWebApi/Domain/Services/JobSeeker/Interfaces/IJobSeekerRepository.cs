@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Services.Login
+namespace Domain.Service.JobSeeker.Interfaces
 {
-    internal class JobSeekerLoginService
-    {
-    }
+	public interface IJobSeekerRepository
+	{
+	}
 }

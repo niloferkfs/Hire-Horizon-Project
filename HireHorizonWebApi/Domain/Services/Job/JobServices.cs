@@ -1,13 +1,14 @@
 
 using Domain.Models;
 using Domain.Service.Job.Interfaces;
-using Domain.Service.JobSeekers.Interfaces;
+using Domain.Service.JobSeeker.Interfaces;
 
 using AutoMapper;
 using Domain.Helpers;
 using Domain.Models;
 using Domain.Service.Job.DTOs;
-
+using Domain.Service.Job.Interfaces;
+using Domain.Service.JobSeeker.Interfaces;
 
 using Microsoft.EntityFrameworkCore;
 

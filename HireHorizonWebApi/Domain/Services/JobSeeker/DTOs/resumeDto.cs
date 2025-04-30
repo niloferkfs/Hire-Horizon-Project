@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Service.JobSeekers.DTOs
+namespace Domain.Service.JobSeeker.DTOs
 {
 	public class resumeDto
 	{

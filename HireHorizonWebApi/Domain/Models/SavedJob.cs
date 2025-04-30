@@ -11,9 +11,8 @@ namespace Domain.Models
 {
     public class SavedJob
     {
-
         public Guid Id { get; set; }
-        
+
         [ForeignKey(nameof(JobPost))]
         public Guid JobPostId { get; set; }
         [Required]
@@ -22,7 +21,5 @@ namespace Domain.Models
         public DateTime DateSaved { get; set; }
         public virtual JobPost JobPost { get; set; }
         public virtual JobSeeker JobSeeker { get; set; }
-
-       
     }
 }
