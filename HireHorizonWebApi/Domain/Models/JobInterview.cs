@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Enums;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace Domain.Models
@@ -37,5 +38,7 @@ namespace Domain.Models
         [ForeignKey(nameof(Company))]
         public Guid CompanyId { get; set; }
         public virtual JobProviderCompany Company { get; set; }
+
     }
 }
+

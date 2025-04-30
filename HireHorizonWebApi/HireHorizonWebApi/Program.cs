@@ -1,6 +1,7 @@
 using System.Text;
 using Domain.Extensions;
 using Domain.Helpers;
+using HireHorizonWebApi.Extension;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.IdentityModel.Tokens;
@@ -38,6 +39,12 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = false
         };
     });
+
+builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+builder.Services.AddHttpContextAccessor();
+
 
 builder.Services.AddCors(options => options.AddPolicy(name: "NgOrigins",
 policy =>

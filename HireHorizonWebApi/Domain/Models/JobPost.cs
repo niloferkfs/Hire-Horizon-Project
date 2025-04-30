@@ -9,7 +9,6 @@ public partial class JobPost
     public Guid Id { get; set; }
 
     public string JobTitle { get; set; } = null!;
-
     public string JobSummary { get; set; } = null!;
 	
 	public Guid? LocationId { get; set; }

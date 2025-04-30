@@ -9,6 +9,7 @@ public class JobProviderCompany
 {
     [Key]
   
+
     public Guid Id { get; set; }
 
     public string LegalName { get; set; } = null!;

@@ -4,17 +4,26 @@ using Domain.Service.Admin.DTOs;
 using Domain.Service.Job.DTOs;
 using Domain.Service.JobProvider.Dtos;
 using Domain.Service.JobProvider.DTOs;
+using Domain.Service.Login.DTOs;
 using Domain.Service.SignUp.DTOs;
 using Domain.Services.Admin.DTOs;
 using Domain.Services.Login.Dto;
+using HireHorizonWebApi.API.Admin.RequestObjects;
 using HireHorizonWebApi.API.JobProvider.RequestObjects;
+
+
 
 namespace HireHorizonWebApi.Extension
 {
-    public class AutoMapperProfile : Profile
+    public class AutoMapperProfile:Profile
     {
-        public  AutoMapperProfile()
+        public AutoMapperProfile()
         {
+            CreateMap<AddSkillRequest, PostedSkillDTO>().ReverseMap();
+            CreateMap<CategoryRequest, CategoryDto>().ReverseMap();
+            CreateMap<LocationRequest, LocationDto>().ReverseMap();
+            CreateMap<IndustryRequest, IndustryDto>().ReverseMap();
+
             CreateMap<JobSeekerDto, JobSeeker>().ReverseMap();
             CreateMap<CategoryDto, JobCategory>().ReverseMap();
             CreateMap<IndustryDto, Industry>().ReverseMap();
@@ -36,6 +45,13 @@ namespace HireHorizonWebApi.Extension
             CreateMap<CompanyMemberDtos, CompanyUser>().ReverseMap();
             CreateMap<CompanyMemberDtos, AuthUser>().ReverseMap();
             CreateMap<CompanyMemberListDtos, CompanyUser>().ReverseMap();
+            CreateMap<JobProviderDto, CompanyUser>().ReverseMap();
+            CreateMap<JobProviderCompany, JobProviderDto>().ReverseMap();
+            CreateMap<LocationDto, Location>().ReverseMap();
+            CreateMap<PostedSkillDTO, Skill>().ReverseMap();
+            CreateMap<AuthUser, AdminLoginDTO>().ReverseMap();
+
+
         }
     }
 }
