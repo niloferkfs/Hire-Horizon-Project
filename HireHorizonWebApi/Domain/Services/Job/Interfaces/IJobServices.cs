@@ -13,8 +13,12 @@ namespace Domain.Service.Job.Interfaces
 {
     public interface IJobServices
 	{
+        public Task<List<JobPostsDtos>> GetJobs(Guid userId);
+        public Task<List<JobPostsDtos>> GetJobs();
+        public Task<List<JobPost>> GetJobsByCompany(Guid companyId);
 
-       
-	}
+        public Task<List<JobPost>> GetJobsById(Guid companyId, Guid jobId);
+
+    }
 
 }

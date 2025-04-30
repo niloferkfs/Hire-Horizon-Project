@@ -1,12 +1,13 @@
 ﻿namespace HireHorizonWebApi.API.JobProvider.RequestObjects
 {
-    public class AddCompanyRequest
+    public class CompanyupdateRequest
     {
+        public Guid Id { get; set; }
         public string LegalName { get; set; } = null!;
 
         public string Summary { get; set; } = null!;
 
-        public Guid IndustryId { get; set; }
+   
 
         public string Email { get; set; } = null!;
 
@@ -15,10 +16,6 @@
         public string Address { get; set; } = null!;
 
         public string Website { get; set; } = null!;
-
-        public Guid Location { get; set; }
-
-
 
     }
 }

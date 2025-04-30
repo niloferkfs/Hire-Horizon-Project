@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Domain.Enums
+namespace Domain.Helpers
 {
-    public enum Roles
+public class CompanyMemberListParam : PaginationParams
     {
-        ADMIN,JOBPROVIDER,JOBSEEKER,COMPANYUSER
     }
 }

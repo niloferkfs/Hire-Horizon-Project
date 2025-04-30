@@ -61,9 +61,9 @@ public partial class HireHorizonApiDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<SystemUser>().UseTpcMappingStrategy();
-    }
+        modelBuilder.Entity<SystemUser>().UseTpcMappingStrategy(); 
 
+    }
 
 
 

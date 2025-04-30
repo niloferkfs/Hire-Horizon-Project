@@ -14,8 +14,22 @@ using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
+using Domain.Services.JobProvider.Interfaces;
+using Domain.Services.JobProvider;
 using Domain.Services.Login.Interface;
 using Domain.Services.Login;
+using Domain.Services.SignUp;
+using Domain.Services.SignUp.Interface;
+using Domain.Service.JobProvider;
+using Domain.Service.User;
+using Domain.Service.User.Interface;
+using Domain.Service.Job;
+using Domain.Service.Job.Interfaces;
+
+using Domain.Services.Login.Interface;
+using Domain.Services.Login;
+
 
 namespace Domain.Extensions
 {
@@ -27,6 +41,22 @@ namespace Domain.Extensions
             options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
 
             services.AddTransient<IEmailService, EmailService>();
+            services.AddScoped<IJobRepository, JobRepository>();
+            services.AddScoped<IAuthUserRepository, AuthUserRepository>();
+            services.AddScoped<IAuthUserService, AuthUserService>();
+            services.AddScoped<IJobServices, JobServices>();
+            services.AddScoped<ICompanyRepository,CompanyRepository>();
+            services.AddScoped<ICompanyService, Companyservice>();
+            services.AddScoped<IInterviewRepository, InterviewRepository>();
+            services.AddScoped<IInterviewService, InterviewService>();
+            services.AddScoped<IJobProviderRepository, JobProviderRepository>();    
+            services.AddScoped<IJobProviderService, JobProviderService>();
+            services.AddScoped<IJobProviderLoginRepository, JobProviderLoginRepository>();
+            services.AddScoped<IJobProviderLoginService, JobProviderLoginService>();
+            services.AddScoped<IJobProviderSignUpRepository, JobProviderSignUpRepository>();
+            services.AddScoped<IJobProviderSignUpService, JobProviderSignUpService>();
+            services.AddScoped<IUserService, UserServices>();
+
 
             services.AddScoped<IAdminRepository, AdminRepository>();
             services.AddScoped<IAdminServices, AdminServices>();
@@ -35,11 +65,6 @@ namespace Domain.Extensions
             services.AddScoped<IAuthUserRepository, AuthUserRepository>();
             services.AddScoped<IAuthUserService, AuthUserService>();
             
-            
-
-
-            
-
             return services;
         }
     }

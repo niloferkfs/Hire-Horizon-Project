@@ -6,13 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Domain.Models;
 
 [Table("AuthUser")]
-public partial class AuthUser:SystemUser
+
+public partial class AuthUser : SystemUser
 {
-    
     public string Password { get; set; } = null!;
-
-
-
-   
 
 }

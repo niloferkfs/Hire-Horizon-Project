@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Service.JobProvider.DTOs
 {
-    public class JobProviderDto
+    public class JobProviderDtos
     {
         public Guid Id { get; set; }
 

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Models;
 
-public partial class JobProviderCompany
+public class JobProviderCompany
 {
     [Key]
+  
 
     public Guid Id { get; set; }
 
@@ -18,11 +20,11 @@ public partial class JobProviderCompany
     public string Website { get; set; } = null!;
 
     public Guid IndustryId { get; set; }
-
+   
     public virtual Industry IndustryNavigation { get; set; } = null!;
 
     public Guid LocationId { get; set; }
-
+   
     public virtual Location LocationNavigation { get; set; } = null!;
 
     public virtual ICollection<CompanyUser> CompanyUsers { get; set; } = new List<CompanyUser>();

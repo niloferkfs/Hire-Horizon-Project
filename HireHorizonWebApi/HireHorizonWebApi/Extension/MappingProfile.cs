@@ -3,32 +3,22 @@ using Domain.Models;
 using Domain.Service.Admin.DTOs;
 using Domain.Service.Job.DTOs;
 using Domain.Service.JobProvider.Dtos;
-using Domain.Service.JobProvider.DTOs;
-using Domain.Service.Login.DTOs;
 using Domain.Service.SignUp.DTOs;
 using Domain.Services.Admin.DTOs;
 using Domain.Services.Login.Dto;
-using HireHorizonWebApi.API.Admin.RequestObjects;
 using HireHorizonWebApi.API.JobProvider.RequestObjects;
-
-
 
 namespace HireHorizonWebApi.Extension
 {
-    public class AutoMapperProfile:Profile
+    public class MappingProfile : Profile
     {
-        public AutoMapperProfile()
+        public MappingProfile()
         {
-            CreateMap<AddSkillRequest, PostedSkillDTO>().ReverseMap();
-            CreateMap<CategoryRequest, CategoryDto>().ReverseMap();
-            CreateMap<LocationRequest, LocationDto>().ReverseMap();
-            CreateMap<IndustryRequest, IndustryDto>().ReverseMap();
-
             CreateMap<JobSeekerDto, JobSeeker>().ReverseMap();
             CreateMap<CategoryDto, JobCategory>().ReverseMap();
             CreateMap<IndustryDto, Industry>().ReverseMap();
             CreateMap<Joblist, JobPost>().ReverseMap();
-            CreateMap<JobProviderDtos, CompanyUser>().ReverseMap();
+            CreateMap<JobProviderDto, CompanyUser>().ReverseMap();
             CreateMap<LocationDto, Location>().ReverseMap();
             CreateMap<PostedSkillDTO, Skill>().ReverseMap();
             CreateMap<JobProviderSignupRequestDto, SignUpRequest>().ReverseMap();
@@ -41,17 +31,6 @@ namespace HireHorizonWebApi.Extension
             CreateMap<CompanyRegistrationDtos, JobProviderCompany>().ReverseMap();
             CreateMap<JobProviderCompany, GetCompanyDetailsDto>().ReverseMap();
             CreateMap<JobPostRequest, JobPost>().ReverseMap();
-            CreateMap<AddCompanyUserRequest, CompanyMemberDtos>().ReverseMap();
-            CreateMap<CompanyMemberDtos, CompanyUser>().ReverseMap();
-            CreateMap<CompanyMemberDtos, AuthUser>().ReverseMap();
-            CreateMap<CompanyMemberListDtos, CompanyUser>().ReverseMap();
-            CreateMap<JobProviderDto, CompanyUser>().ReverseMap();
-            CreateMap<JobProviderCompany, JobProviderDto>().ReverseMap();
-            CreateMap<LocationDto, Location>().ReverseMap();
-            CreateMap<PostedSkillDTO, Skill>().ReverseMap();
-            CreateMap<AuthUser, AdminLoginDTO>().ReverseMap();
-
-
         }
     }
 }
