@@ -1,21 +1,20 @@
 ﻿using AutoMapper;
-using Domain.Service.Admin;
 using Domain.Service.Admin.DTOs;
 using Domain.Service.Admin.Interfaces;
 using Domain.Services.Admin.DTOs;
 using Domain.Services.Login.Interface;
+using HireHorizonAPI.API.Admin.RequestObjects;
 using HireHorizonWebApi.API.Admin.RequestObjects;
-using HireHorizonWebApi.Controllers;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HireHorizonWebApi.API.Admin
+namespace HireHorizonAPI.API.Admin
 {
-    
+    [Route("api/[controller]")]
     [ApiController]
-    public class AdminController : BaseApiController<AdminController>
+    public class AdminController : ControllerBase
     {
+
         private readonly IAdminServices adminServices;
         private readonly IMapper mapper;
         private readonly IAdminLoginService adminLoginService;
@@ -311,6 +310,5 @@ namespace HireHorizonWebApi.API.Admin
 
 
        
-
     }
 }

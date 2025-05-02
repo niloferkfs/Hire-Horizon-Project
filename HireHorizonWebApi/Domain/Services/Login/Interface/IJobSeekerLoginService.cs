@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Service.Login.DTOs;
 
 namespace Domain.Services.Login.Interface
 {
-    internal interface IJobSeekerLoginService
+    public interface IJobSeekerLoginService
     {
+        JobSeekerLoginDto Login(string email, string password);
     }
 }

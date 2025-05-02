@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Domain.Helpers
 {
-   public class PagedList<T> : List<T>
+    public class PagedList<T>:List<T>
     {
         private object count;
         private int pageNumber;

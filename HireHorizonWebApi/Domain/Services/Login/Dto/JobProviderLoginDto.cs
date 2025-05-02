@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Services.Login.Dto
 {
-   public class JobProviderLoginDto
+    public class JobProviderLoginDto
     {
         public Guid Id { get; set; }
         public string? UserName { get; set; }

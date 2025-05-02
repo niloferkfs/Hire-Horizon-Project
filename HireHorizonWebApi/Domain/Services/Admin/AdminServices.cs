@@ -51,7 +51,7 @@ namespace Domain.Service.Admin
 
         public async Task<PostedSkillDTO> AddSkill(PostedSkillDTO skillDto)
         {
-         var skill = mapper.Map<Skill>(skillDto);
+            var skill = mapper.Map<Skill>(skillDto);
             await adminRepository.AddSkill(skill);
             return skillDto;
         }
@@ -78,7 +78,7 @@ namespace Domain.Service.Admin
 
         public async Task<List<Joblist>> GetAllJobs()
         {
-            var jobs= await adminRepository.GetAllJobs();
+            var jobs = await adminRepository.GetAllJobs();
             return mapper.Map<List<Joblist>>(jobs);
         }
 
@@ -111,7 +111,7 @@ namespace Domain.Service.Admin
 
         public async Task<List<JobSeekerDto>> GetJobSeekers()
         {
-            var jobseekers= await adminRepository.GetJobSeekers();
+            var jobseekers = await adminRepository.GetJobSeekers();
             return mapper.Map<List<JobSeekerDto>>(jobseekers);
         }
 

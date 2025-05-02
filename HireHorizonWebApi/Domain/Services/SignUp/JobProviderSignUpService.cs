@@ -6,17 +6,14 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Domain.Helpers;
 using Domain.Models;
-using Domain.Service.Authuser;
 using Domain.Service.Authuser.Interfaces;
-using Domain.Service.JobSeeker;
-using Domain.Service.JobSeeker.Interfaces;
 using Domain.Service.SignUp.DTOs;
 using Domain.Services.Email;
 using Domain.Services.SignUp.Interface;
 
 namespace Domain.Services.SignUp
 {
-   public class JobProviderSignUpService : IJobProviderSignUpService
+    internal class JobProviderSignUpService:IJobProviderSignUpService
     {
         IJobProviderSignUpRepository _jobprovidersignuprepo;
         IAuthUserRepository _authuserrepo;
@@ -36,19 +33,19 @@ namespace Domain.Services.SignUp
             {
                 SignUpRequest signUpRequest = await _jobprovidersignuprepo.GetSignupRequestByIdAsync(jobProviderSignupRequestId);
                 //AuthUser authUser = mapper.Map<AuthUser>(signUpRequest);
-               
+
                 if (signUpRequest.Status == Enums.Status.VERIFIED)
                 {
                     //need to change this code by using Automapper 
                     Domain.Models.AuthUser authUser = _mapper.Map<Domain.Models.AuthUser>(signUpRequest);
-                        authUser.Password = password;
+                    authUser.Password = password;
 
-                   
+
                     authUser = await _authuserrepo.AddAuthUserJobProvider(authUser);
                     signUpRequest.Status = Enums.Status.CREATED;
                     _jobprovidersignuprepo.UpdateSignupRequest(signUpRequest);
                 }
-               
+
 
                 //await jobSeekerRepository.AddJobSeekerAsync(jobseeker);
             }
@@ -83,5 +80,3 @@ namespace Domain.Services.SignUp
         }
     }
 }
-
-    

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Helpers
 {
-public class CompanyMemberListParam : PaginationParams
+    public class CompanyMemberListParam:PaginationParams
     {
     }
 }

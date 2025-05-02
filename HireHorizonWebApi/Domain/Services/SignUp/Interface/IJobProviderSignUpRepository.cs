@@ -7,7 +7,7 @@ using Domain.Models;
 
 namespace Domain.Services.SignUp.Interface
 {
- public interface IJobProviderSignUpRepository
+    public interface IJobProviderSignUpRepository
     {
         Task AddJobProviderAsync(Models.JobProviderCompany jobprovider);
         Guid AddSignupRequest(SignUpRequest signUpRequest);

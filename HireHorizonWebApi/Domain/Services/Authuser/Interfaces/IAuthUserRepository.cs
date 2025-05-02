@@ -9,17 +9,16 @@ namespace Domain.Service.Authuser.Interfaces
 {
     public interface IAuthUserRepository
     {
+        Task<AuthUser> AddAuthUserJb(AuthUser authUser);
 
-       Task<AuthUser> AddAuthUserJobProvider(AuthUser authUser);
+        Task<AuthUser> AddAuthUserJobProvider(AuthUser authUser);
         string? CreateToken(AuthUser user);
         CompanyUser GetUser(Guid userid);
-        Task AddUserConnectionIdAsync(string email, string Connectionid);  
-       
-        Task<AuthUser> GetAuthUserByUserEmail(string user);
-      
-        Task<AuthUser> GetAuthUserByUserId(Guid value);
+        Task AddUserConnectionIdAsync(string email, string Connectionid);
 
-       
+        Task<AuthUser> GetAuthUserByUserEmail(string user);
+
+        Task<AuthUser> GetAuthUserByUserId(Guid value);
 
     }
 

@@ -10,6 +10,7 @@ public partial class Industry
     public string Name { get; set; } = null!;
 
     public string Description { get; set; } = null!;
-    public virtual ICollection<JobProviderCompany> JobProviderCompanies { get; set; } = new List<JobProviderCompany>();
-    public virtual ICollection<JobPost> JobPosts { get; set; } = new List<JobPost>();
+
+    public virtual ICollection<JobPost> JobPosts { get; set; }=new List<JobPost>();
+    public virtual ICollection<JobProviderCompany> JobProviderCompanies { get; set; }=new List<JobProviderCompany>();
 }

@@ -6,11 +6,9 @@ using Domain.Service.Authuser;
 using Domain.Service.Authuser.Interfaces;
 using Domain.Service.Job;
 using Domain.Service.Job.Interfaces;
-using Domain.Service.JobSeeker;
-using Domain.Service.JobSeeker.Interfaces;
+using Domain.Service.SignUp.DTOs;
 using Domain.Services.Email;
 using Domain.Services.JobProvider.Interfaces;
-using Domain.Service.SignUp.DTOs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -26,7 +24,7 @@ namespace Domain.Service.JobProvider
         IMapper _mapper;
         IEmailService _emailService;
         IAuthUserRepository _authUserRepository;
-        
+
         public JobProviderService(IJobProviderRepository jobProviderRepository, IMapper mapper, IEmailService emailService, IAuthUserRepository authUserRepository)
         {
             _jobProviderRepository = jobProviderRepository;
@@ -101,12 +99,12 @@ namespace Domain.Service.JobProvider
             try
             {
                 SignUpRequest signUpRequest = await _jobProviderRepository.GetSignupRequestByIdAsync(jobProviderSignupRequestId);
-                if(signUpRequest.Status == Enums.Status.VERIFIED)
-                { 
-                AuthUser authUser = _mapper.Map<AuthUser>(signUpRequest);
+                if (signUpRequest.Status == Enums.Status.VERIFIED)
+                {
+                    AuthUser authUser = _mapper.Map<AuthUser>(signUpRequest);
                     authUser.Password = password;
-               
-                   
+
+
                     authUser = await _authUserRepository.AddAuthUserJobProvider(authUser);
                     signUpRequest.Status = Enums.Status.CREATED;
                     _jobProviderRepository.UpdateSignupRequest(signUpRequest);
@@ -125,5 +123,6 @@ namespace Domain.Service.JobProvider
         {
             return await _jobProviderRepository.GetCompany(jobproviderId);
         }
+
     }
 }

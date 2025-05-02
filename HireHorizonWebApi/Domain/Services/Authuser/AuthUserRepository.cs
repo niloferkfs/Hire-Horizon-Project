@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Domain.Enums;
 using Domain.Models;
 using Domain.Service.Authuser.Interfaces;
 using Microsoft.AspNetCore.Http;
@@ -15,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Service.Authuser
 {
-    public class AuthUserRepository : IAuthUserRepository
+    public class AuthUserRepository:IAuthUserRepository
     {
         private readonly HireHorizonApiDbContext _context;
         private readonly IMapper _mapper;
@@ -26,32 +27,21 @@ namespace Domain.Service.Authuser
             _context = context;
             _mapper = mapper;
             _configuration = configuration;
-
         }
 
-        public async Task<AuthUser> AddAuthUserJobProvider(AuthUser authUser)
-        {
-            authUser.Role = Enums.Roles.JOBPROVIDER;
-            await _context.AuthUsers.AddAsync(authUser);
-            Models.CompanyUser jobProvider = _mapper.Map<Models.CompanyUser>(authUser);
-            await _context.CompanyUsers.AddAsync(jobProvider);
-            _context.SaveChanges();
-            return authUser;
-        }
         public string? CreateToken(AuthUser user)
         {
             if (user == null)
             {
-
+                
                 throw new ArgumentNullException(nameof(user), "User object cannot be null.");
             }
             string tokenSecret = _configuration.GetSection("AuthSettings:Token").Value;
             if (string.IsNullOrEmpty(tokenSecret))
             {
-
+                
                 throw new InvalidOperationException("Token secret is missing or empty in configuration.");
             }
-
 
             List<Claim> claims = new List<Claim>
             {
@@ -75,13 +65,47 @@ namespace Domain.Service.Authuser
             return jwt;
         }
 
+
+        public async Task<AuthUser> AddAuthUserJb(AuthUser authUser)
+        {
+            //authUser.Id = Guid.NewGuid();
+            authUser.Role = Roles.JOBSEEKER;
+
+            await _context.AuthUsers.AddAsync(authUser);
+
+            
+            JobSeeker jobSeeker = _mapper.Map<JobSeeker>(authUser);
+
+            await _context.JobSeekers.AddAsync(jobSeeker);
+
+            JobSeekerProfile jp = new()
+            {
+                JobSeekerId = authUser.Id 
+            };
+            await _context.JobSeekerProfiles.AddAsync(jp);
+
+            await _context.SaveChangesAsync();
+
+            return authUser;
+        }
+
+        public async Task<AuthUser> AddAuthUserJobProvider(AuthUser authUser)
+        {
+            authUser.Role = Enums.Roles.JOBPROVIDER;
+            await _context.AuthUsers.AddAsync(authUser);
+            Models.CompanyUser jobProvider = _mapper.Map<Models.CompanyUser>(authUser);
+            await _context.CompanyUsers.AddAsync(jobProvider);
+            _context.SaveChanges();
+            return authUser;
+        }
+
         public CompanyUser GetUser(Guid userid)
         {
             return _context.CompanyUsers.Where(e => e.Id == userid).FirstOrDefault();
         }
         public async Task AddUserConnectionIdAsync(string email, string Connectionid)
         {
-            
+
         }
         public async Task<AuthUser> GetAuthUserByUserEmail(string email)
         {
@@ -93,6 +117,6 @@ namespace Domain.Service.Authuser
             var authuser = await _context.AuthUsers.Where(e => e.Id == authUserId).FirstOrDefaultAsync();
             return authuser;
         }
+
     }
 }
-
