@@ -44,7 +44,7 @@ namespace HireHorizonWebApi.API.Admin
 
         [HttpGet]
         [Route("admin/GetJobSeekers")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> GetJobSeekers()
         {
             try
@@ -60,7 +60,7 @@ namespace HireHorizonWebApi.API.Admin
         }
 
         [HttpPost("skillAdd")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> AddSkill(AddSkillRequest skill)
         {
             
@@ -76,12 +76,12 @@ namespace HireHorizonWebApi.API.Admin
             else
             {
 
-                return Ok("Skill added successfully");
+                return Ok(result);
             }
         }
 
         [HttpDelete("skillRemove/{skillId}")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         
         public async Task<IActionResult> RemoveSkill(Guid skillId)
         {
@@ -100,7 +100,7 @@ namespace HireHorizonWebApi.API.Admin
 
         [HttpGet]
         [Route("admin/GetCompanies")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> GetCompanies()
         {
 
@@ -118,7 +118,7 @@ namespace HireHorizonWebApi.API.Admin
 
         [HttpGet]
         [Route("admin/SearchCompanies")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> SearchCompanies(string name)
         {
             try
@@ -135,7 +135,7 @@ namespace HireHorizonWebApi.API.Admin
 
         [HttpGet]
         [Route("admin/jobsbyTitle")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> GetjobsbyTitle(string Title)
         {
 
@@ -174,7 +174,7 @@ namespace HireHorizonWebApi.API.Admin
 
         [HttpGet]
         [Route("admin/GetJobProviderCount")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public IActionResult GetJobProviderCount()
         {
             try
@@ -191,7 +191,7 @@ namespace HireHorizonWebApi.API.Admin
 
         [HttpGet]
         [Route("admin/GetJobCount")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public IActionResult GetJobCount()
         {
             try
@@ -208,7 +208,7 @@ namespace HireHorizonWebApi.API.Admin
 
 
        [HttpPost("AddLocation")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> AddLocation(LocationRequest location)
         {
             var Location = mapper.Map<LocationDto>(location);
@@ -218,7 +218,7 @@ namespace HireHorizonWebApi.API.Admin
         }
 
         [HttpPost("AddCategory")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
 
         public async Task<IActionResult> AddCategory(CategoryRequest category)
         {
@@ -229,7 +229,7 @@ namespace HireHorizonWebApi.API.Admin
         }
 
         [HttpPost("AddIndustry")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> AddIndustry(IndustryRequest industry)
         {
             var Industrydto = mapper.Map<IndustryDto>(industry);
@@ -255,7 +255,7 @@ namespace HireHorizonWebApi.API.Admin
         }
 
         [HttpDelete("RemoveCategory/{CategoryId}")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> RemoveCategory(Guid CategoryId)
         {
 
@@ -272,7 +272,7 @@ namespace HireHorizonWebApi.API.Admin
         }
 
         [HttpDelete("RemoveIndustry/{IndustryId}")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> RemoveIndustry(Guid IndustryId)
         {
 
@@ -293,7 +293,7 @@ namespace HireHorizonWebApi.API.Admin
 
 
         [HttpGet("GetLocations")]
-        [Authorize(Roles = "ADMIN")]
+        //[Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> GetLocations()
         {
 
