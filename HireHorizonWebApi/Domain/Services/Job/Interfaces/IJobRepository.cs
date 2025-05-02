@@ -20,6 +20,8 @@ namespace Domain.Service.Job.Interfaces
         Task<List<JobPost>> GetJobsById(Guid companyId, Guid jobId);
         bool SavedJobs(JobPostsDtos job, Guid userId);
 
+
+
     }
 
 }

@@ -66,7 +66,7 @@ namespace Domain.Service.Job
         }
         public async Task<List<JobPost>> GetJobsByCompany(Guid companyId)
         {
-          
+
             return await _context.JobPosts.Where(e => e.CompanyId == companyId).ToListAsync();
         }
 
@@ -78,7 +78,7 @@ namespace Domain.Service.Job
         public bool SavedJobs(JobPostsDtos job, Guid userId)
         {
             // Assuming JobPostsDtos has an Id property
-            bool isJobSaved = _context.SavedJobs.Any(e => e.JobPostId == job.Id && e.SavedById                                                                                                                                                                                                                                                                                                                                  == userId);
+            bool isJobSaved = _context.SavedJobs.Any(e => e.JobPostId == job.Id && e.SavedById == userId);
             return isJobSaved;
         }
     }

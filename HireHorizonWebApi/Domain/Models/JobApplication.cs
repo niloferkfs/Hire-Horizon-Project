@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,8 +30,8 @@ namespace Domain.Models
         public virtual JobSeeker Seeker { get; set; }
         public virtual JobPost JobPost { get; set; }
 
-    }
+     
 
 
     }
-
+}

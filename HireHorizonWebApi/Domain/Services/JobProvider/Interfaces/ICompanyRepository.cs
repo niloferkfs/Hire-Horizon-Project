@@ -9,7 +9,7 @@ using Domain.Service.JobProvider.DTOs;
 
 namespace Domain.Services.JobProvider.Interfaces
 {
-  public interface ICompanyRepository
+    public interface ICompanyRepository
     {
         Task AddCompany(JobProviderCompany data, Guid UserId);
         JobProviderCompany GetCompany(Guid companyId);

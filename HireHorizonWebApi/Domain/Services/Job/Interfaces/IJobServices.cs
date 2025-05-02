@@ -19,6 +19,8 @@ namespace Domain.Service.Job.Interfaces
 
         public Task<List<JobPost>> GetJobsById(Guid companyId, Guid jobId);
 
+
+
     }
 
 }

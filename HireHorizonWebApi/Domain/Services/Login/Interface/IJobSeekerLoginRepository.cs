@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Models;
 
 namespace Domain.Services.Login.Interface
 {
-    internal interface IJobSeekerLoginRepository
+    public interface IJobSeekerLoginRepository
     {
+        AuthUser GetUserByEmail(string email);
+
+        AuthUser GetUserByEmailPassword(string email, string password);
     }
 }

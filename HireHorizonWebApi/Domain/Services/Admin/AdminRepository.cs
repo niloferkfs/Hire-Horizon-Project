@@ -29,7 +29,7 @@ namespace Domain.Service.Admin
             {
                 throw new ArgumentNullException(nameof(category));
             }
-            if(_context.JobCategories.Any(c=>c.Name == category.Name))
+            if (_context.JobCategories.Any(c => c.Name == category.Name))
             {
                 return null;
             }
@@ -115,7 +115,7 @@ namespace Domain.Service.Admin
             return true;
         }
 
-        public async Task<bool>  DeleteLocationById(Guid locationId)
+        public async Task<bool> DeleteLocationById(Guid locationId)
         {
             var LocationToRemove = await _context.Locations.FindAsync(locationId);
             if (LocationToRemove == null)

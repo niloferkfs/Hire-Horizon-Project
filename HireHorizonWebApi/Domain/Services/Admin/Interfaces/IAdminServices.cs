@@ -44,7 +44,6 @@ namespace Domain.Service.Admin.Interfaces
         public Task<List<JobProviderCompany>> SearchCompanies(string name);
 
 
-
     }
 
 }

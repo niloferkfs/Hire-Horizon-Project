@@ -11,12 +11,9 @@ namespace Domain.Service.Authuser.Interfaces
 	public interface IAuthUserService
 	{
 
-		string GetUserId();
+        string GetUserId();
 
-		CompanyUser GetUser(Guid userId);
-
-
-      
+        CompanyUser GetUser(Guid userId);
 
     }
 }

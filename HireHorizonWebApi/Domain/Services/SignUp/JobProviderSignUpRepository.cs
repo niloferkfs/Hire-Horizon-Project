@@ -9,7 +9,7 @@ using Domain.Services.SignUp.Interface;
 
 namespace Domain.Services.SignUp
 {
-    internal class JobProviderSignUpRepository : IJobProviderSignUpRepository
+    internal class JobProviderSignUpRepository:IJobProviderSignUpRepository
     {
         protected readonly HireHorizonApiDbContext _context;
         public JobProviderSignUpRepository(HireHorizonApiDbContext context)
@@ -22,7 +22,7 @@ namespace Domain.Services.SignUp
             _context.SaveChanges();
 
         }
-           public Guid AddSignupRequest(SignUpRequest signUpRequest)
+        public Guid AddSignupRequest(SignUpRequest signUpRequest)
         {
             signUpRequest.Status = Status.PENDING;
             _context.SignUpRequests.AddAsync(signUpRequest);
@@ -38,6 +38,6 @@ namespace Domain.Services.SignUp
         {
             _context.SignUpRequests.Update(signUpRequest);
             _context.SaveChanges();
-        }    
+        }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +12,6 @@ namespace Domain.Models
 {
     public class JobInterview
     {
-        
         public Guid Id { get; set; }
         [ForeignKey(nameof(Job))]
         public Guid? JobId { get; set; }
@@ -32,7 +30,6 @@ namespace Domain.Models
         public virtual CompanyUser? CompanyUser { get; set; }
 
         public virtual JobPost? Job { get; set; }
-
         public virtual JobSeeker? Jobseeker { get; set; }
         public virtual JobApplication? Application { get; set; }
         [ForeignKey(nameof(Company))]
@@ -41,4 +38,3 @@ namespace Domain.Models
 
     }
 }
-

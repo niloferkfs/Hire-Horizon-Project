@@ -34,7 +34,7 @@ namespace Domain.Service.Admin.Interfaces
 
         public Task<bool> DeleteCategoryById(Guid CategoryId);
         public Task<Industry> AddIndustry(Industry industry);
-        public Task<bool> DeleteIndustryById(Guid IndustryId); 
+        public Task<bool> DeleteIndustryById(Guid IndustryId);
 
         public int GetJobProviderCount();
         public int GetCompanyCount();
@@ -47,7 +47,9 @@ namespace Domain.Service.Admin.Interfaces
 
 
 
-      
+
+
+
 
     }
 
