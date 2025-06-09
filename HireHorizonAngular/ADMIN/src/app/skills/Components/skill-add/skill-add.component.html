@@ -1,0 +1,15 @@
+<div class="container-fluid mt-5 p-5">
+    <form [formGroup]="skillForm" (ngSubmit)="onSubmit()" class="skill-form ">
+      
+      <mat-form-field class="skill-full-width">
+        <input matInput placeholder="Skill Name" formControlName="name">
+      </mat-form-field>
+      
+      <mat-form-field class="skill-full-width">
+        <textarea matInput placeholder="Skill Description" formControlName="description"></textarea>
+      </mat-form-field>
+  <b *ngIf="showMessage" class="text-primary">Skill Added</b>
+      <button type="submit" class="btn btn-primary">Add Skill</button>
+      <div class=" btn m-2 text-white "  style="width: 9%; background-color: rgb(4, 4, 232);" (click)=navigateToSkillsView()>List</div>
+    </form>
+  </div>

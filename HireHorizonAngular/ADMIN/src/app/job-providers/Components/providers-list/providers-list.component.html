@@ -1,0 +1,38 @@
+<div class="cotainer-fluid mt- 5 ">
+    <h1 class="fw-bold py-5">Job Providers</h1>
+    <div class="row">
+        <div class="col-md-11 searchbar border border-2 m-3 p-2 rounded-5 bg-white">
+            <div class=" row input-group ">
+                
+                <div class="col-md-9">
+                    <input type="text"  [(ngModel)] = "searchTerm" class="form-control border-0" (input)="filterCompany()"
+                        placeholder="Search by Title,Company or any jobs keyword" aria-label="Search">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <p class="h6">Showing <span>{{ companies.length}}</span> Companies</p>
+            <small>Based your preferences</small>
+        </div>
+    </div>
+
+    <div class="row d-flex flex-row">
+        <div class="col-md-4 " *ngFor="let company of companies">
+
+            <div class="card m-4 border border-2 rounded bg-white p-2">
+                <p><span>Legal Name</span> : {{company.legalName}}</p>
+                <p><span>Summary</span> : {{company.summary}}</p>
+                <p><span>Industry</span> : {{company.industry}}</p>
+                <p><span>Email</span> : {{company.email}}</p>
+                <p><span>Phone</span> : {{company.phone}}</p>
+                <p><span>Address</span> : {{company.address}}</p>
+                <p><span>Website</span> : {{company.website}}</p>
+                <p><span>Location</span> : {{company.location}}</p>
+                <div class="d-flex justify-content-between mx-2"><i class="bi bi-trash3 text-primary p-2 btn" (click)="removeCompany(company.id)"></i>
+              
+                    <i class="bi bi-slash-circle text-danger p-2"></i>
+                </div>
+            </div>
+        </div>

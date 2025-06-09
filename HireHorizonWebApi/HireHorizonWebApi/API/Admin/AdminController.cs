@@ -5,14 +5,16 @@ using Domain.Services.Admin.DTOs;
 using Domain.Services.Login.Interface;
 using HireHorizonAPI.API.Admin.RequestObjects;
 using HireHorizonWebApi.API.Admin.RequestObjects;
+using HireHorizonWebApi.Controllers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HireHorizonAPI.API.Admin
 {
-    [Route("api/[controller]")]
+    
     [ApiController]
-    public class AdminController : ControllerBase
+    public class AdminController : BaseApiController<AdminController>
     {
 
         private readonly IAdminServices adminServices;
@@ -31,19 +33,23 @@ namespace HireHorizonAPI.API.Admin
        
         public async Task<ActionResult> Login(AdminLoginRequest loginData)
         {
-            var user = adminLoginService.Adminlogin(loginData.Email, loginData.Password);
-
-            if(user == null)
+            try
             {
-                return BadRequest("Login Failed");
+                var user = adminLoginService.Adminlogin(loginData.Email, loginData.Password);
+                return Ok(user);
+            }
+                
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
 
-            return Ok(user);
+            
         }
 
         [HttpGet]
         [Route("admin/GetJobSeekers")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> GetJobSeekers()
         {
             try
@@ -59,7 +65,7 @@ namespace HireHorizonAPI.API.Admin
         }
 
         [HttpPost("skillAdd")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> AddSkill(AddSkillRequest skill)
         {
             
@@ -79,9 +85,23 @@ namespace HireHorizonAPI.API.Admin
             }
         }
 
+        [HttpGet("GetSkills")]
+        public async Task<IActionResult> GetSkills()
+        {
+            try
+            {
+                var Skills = await adminServices.GetSkills();
+                return Ok(Skills);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
         [HttpDelete("skillRemove/{skillId}")]
-        //[Authorize(Roles = "ADMIN")]
-        
+        [Authorize(Roles = "ADMIN")]
+
         public async Task<IActionResult> RemoveSkill(Guid skillId)
         {
            
@@ -99,7 +119,7 @@ namespace HireHorizonAPI.API.Admin
 
         [HttpGet]
         [Route("admin/GetCompanies")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> GetCompanies()
         {
 
@@ -110,14 +130,14 @@ namespace HireHorizonAPI.API.Admin
             }
             catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(ex.Message);
             }
 
         }
 
         [HttpGet]
         [Route("admin/SearchCompanies")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> SearchCompanies(string name)
         {
             try
@@ -127,14 +147,14 @@ namespace HireHorizonAPI.API.Admin
             }
             catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(ex.Message);
             }
 
         }
 
         [HttpGet]
         [Route("admin/jobsbyTitle")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> GetjobsbyTitle(string Title)
         {
 
@@ -145,7 +165,7 @@ namespace HireHorizonAPI.API.Admin
             }
             catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(ex.Message);
             }
 
         }
@@ -162,7 +182,7 @@ namespace HireHorizonAPI.API.Admin
             }
             catch (Exception ex)
             {
-                return BadRequest();
+                return BadRequest(ex.Message);
             }
 
         }
@@ -173,7 +193,7 @@ namespace HireHorizonAPI.API.Admin
 
         [HttpGet]
         [Route("admin/GetJobProviderCount")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult GetJobProviderCount()
         {
             try
@@ -190,7 +210,7 @@ namespace HireHorizonAPI.API.Admin
 
         [HttpGet]
         [Route("admin/GetJobCount")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public IActionResult GetJobCount()
         {
             try
@@ -207,7 +227,7 @@ namespace HireHorizonAPI.API.Admin
 
 
        [HttpPost("AddLocation")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> AddLocation(LocationRequest location)
         {
             var Location = mapper.Map<LocationDto>(location);
@@ -216,25 +236,21 @@ namespace HireHorizonAPI.API.Admin
             return Ok(result);
         }
 
-        [HttpPost("AddCategory")]
-        //[Authorize(Roles = "ADMIN")]
-
-        public async Task<IActionResult> AddCategory(CategoryRequest category)
+        [HttpGet("GetLocations")]
+        [Authorize(Roles = "ADMIN")]
+        public async Task<IActionResult> GetLocations()
         {
-            var Categorydto = mapper.Map<CategoryDto>(category);
-            var result = await adminServices.AddCategory(Categorydto);
 
-            return Ok(result);
-        }
+            try
+            {
+                var locations = await adminServices.GetLocations();
+                return Ok(mapper.Map<List<LocationDto>>(locations));
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
 
-        [HttpPost("AddIndustry")]
-        //[Authorize(Roles = "ADMIN")]
-        public async Task<IActionResult> AddIndustry(IndustryRequest industry)
-        {
-            var Industrydto = mapper.Map<IndustryDto>(industry);
-            var result = await adminServices.AddIndustry(Industrydto);
-
-            return Ok(result);
         }
 
         [HttpDelete("RemoveLocation/{LocationId}")]
@@ -253,8 +269,34 @@ namespace HireHorizonAPI.API.Admin
             }
         }
 
+
+        [HttpPost("AddCategory")]
+        [Authorize(Roles = "ADMIN")]
+
+        public async Task<IActionResult> AddCategory(CategoryRequest category)
+        {
+            var Categorydto = mapper.Map<CategoryDto>(category);
+            var result = await adminServices.AddCategory(Categorydto);
+
+            return Ok(result);
+        }
+
+        [HttpGet("GetCategories")]
+        public async Task<IActionResult> GetCategories()
+        {
+            try
+            {
+                var Categories = await adminServices.GetCategories();
+                return Ok(Categories);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
         [HttpDelete("RemoveCategory/{CategoryId}")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> RemoveCategory(Guid CategoryId)
         {
 
@@ -270,8 +312,36 @@ namespace HireHorizonAPI.API.Admin
             }
         }
 
+        [HttpPost("AddIndustry")]
+        [Authorize(Roles = "ADMIN")]
+        public async Task<IActionResult> AddIndustry(IndustryRequest industry)
+        {
+            var Industrydto = mapper.Map<IndustryDto>(industry);
+            var result = await adminServices.AddIndustry(Industrydto);
+
+            return Ok(result);
+        }
+
+        [HttpGet("GetIndustries")]
+        public async Task<IActionResult> GetIndustries()
+        {
+            try
+            {
+                var Skills = await adminServices.GetIndustries();
+                return Ok(Skills);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest();
+            }
+        }
+
+       
+
+        
+
         [HttpDelete("RemoveIndustry/{IndustryId}")]
-        //[Authorize(Roles = "ADMIN")]
+        [Authorize(Roles = "ADMIN")]
         public async Task<IActionResult> RemoveIndustry(Guid IndustryId)
         {
 
@@ -291,23 +361,7 @@ namespace HireHorizonAPI.API.Admin
 
 
 
-        [HttpGet("GetLocations")]
-        //[Authorize(Roles = "ADMIN")]
-        public async Task<IActionResult> GetLocations()
-        {
-
-            try
-            {
-                var locations = await adminServices.GetLocations();
-                return Ok(mapper.Map<List<LocationDto>>(locations));
-            }
-            catch (Exception ex)
-            {
-                return BadRequest();
-            }
-
-        }
-
+       
 
        
     }

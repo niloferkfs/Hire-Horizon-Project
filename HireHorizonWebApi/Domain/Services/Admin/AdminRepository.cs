@@ -178,6 +178,21 @@ namespace Domain.Service.Admin
             return await _context.Locations.ToListAsync();
         }
 
+        public async Task<List<Skill>> GetSkills()
+        {
+            return await _context.Skills.ToListAsync();
+        }
+        public async Task<List<JobCategory>> GetCategories()
+        {
+            return await _context.JobCategories.ToListAsync();
+        }
+        public async Task<List<Industry>> GetIndustries()
+        {
+            return await _context.Industries.ToListAsync();
+        }
+
+
+
         public async Task<List<JobPost>> GetJobsbyTitle(string JobTitle)
         {
             return await _context.JobPosts.Where(e => e.JobTitle.Contains(JobTitle)).ToListAsync();

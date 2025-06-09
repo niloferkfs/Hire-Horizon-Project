@@ -55,6 +55,7 @@ namespace Domain.Service.Admin
             await adminRepository.AddSkill(skill);
             return skillDto;
         }
+        
 
         public async Task<bool> DeleteCategoryById(Guid CategoryId)
         {
@@ -119,6 +120,22 @@ namespace Domain.Service.Admin
         {
             var locations = await adminRepository.GetLocations();
             return mapper.Map<List<LocationDto>>(locations);
+        }
+
+        public async Task<List<PostedSkillDTO>> GetSkills()
+        {
+            var Skills = await adminRepository.GetSkills();
+            return mapper.Map<List<PostedSkillDTO>>(Skills);
+        }
+        public async Task<List<CategoryDto>> GetCategories()
+        {
+            var Categories = await adminRepository.GetCategories();
+            return mapper.Map<List<CategoryDto>>(Categories);
+        }
+        public async Task<List<IndustryDto>> GetIndustries()
+        {
+            var Industries = await adminRepository.GetIndustries();
+            return mapper.Map<List<IndustryDto>>(Industries);
         }
 
         public async Task<List<JobProviderCompany>> SearchCompanies(string name)

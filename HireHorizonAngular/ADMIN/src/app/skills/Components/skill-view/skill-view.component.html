@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-3 m-2" *ngFor="let skill of skills">
+        <div class="card-container border border-secondary rounded p-3 position-relative">
+          <p><span class="fw-bold">Skill Name : </span>{{ skill.name }}</p>
+          <p><span class="fw-bold">Description : </span> {{ skill.description }}</p>
+          <br>
+          <button class="btn btn-danger" (click)="deleteSkill(skill.id)">
+            delete
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class=" btn m-2 text-white" style="width: 9%; background-color: rgb(4, 4, 232);" (click)= navigateToAddSkills() >Add Skill</div>
+  </div>
+  

@@ -51,7 +51,7 @@ namespace HireHorizonWebApi.Extension
 
 
 
-            //
+            //Admin
             CreateMap<AddSkillRequest, PostedSkillDTO>().ReverseMap();
             CreateMap<CategoryRequest, CategoryDto>().ReverseMap();
             CreateMap<LocationRequest, LocationDto>().ReverseMap();
@@ -62,12 +62,16 @@ namespace HireHorizonWebApi.Extension
             CreateMap<IndustryDto, Industry>().ReverseMap();
             CreateMap<Joblist, JobPost>().ReverseMap();
             CreateMap<JobProviderDto, CompanyUser>().ReverseMap();
+            CreateMap<JobProviderCompany, JobProviderDto>().ReverseMap();
             CreateMap<LocationDto, Location>().ReverseMap();
             CreateMap<PostedSkillDTO, Skill>().ReverseMap();
             CreateMap<JobProviderSignupRequestDto, SignUpRequest>().ReverseMap();
             CreateMap<AuthUser, JobProviderLoginDto>().ReverseMap();
             CreateMap<SignUpRequest, AuthUser>().ReverseMap();
-            CreateMap<AuthUser, CompanyUser>().ReverseMap();
+            
+            CreateMap<AuthUser, AdminLoginDTO>().ReverseMap();
+
+            //JobProvider
             CreateMap<JobPost, JobPostsDtos>().ReverseMap();
             CreateMap<JobProviderSignUpRequest, JobProviderSignupRequestDto>().ReverseMap();
             CreateMap<AddCompanyRequest, CompanyRegistrationDtos>().ReverseMap();
@@ -80,9 +84,9 @@ namespace HireHorizonWebApi.Extension
             CreateMap<CompanyMemberListDtos, CompanyUser>().ReverseMap();
             CreateMap<JobProviderDtos, CompanyUser>().ReverseMap();
             CreateMap<JobProviderCompany, JobProviderDtos>().ReverseMap();
-            CreateMap<LocationDto, Location>().ReverseMap();
-            CreateMap<PostedSkillDTO, Skill>().ReverseMap();
-            CreateMap<AuthUser, AdminLoginDTO>().ReverseMap();
+            CreateMap<AuthUser, CompanyUser>().ReverseMap();
+
+
 
         }
     }

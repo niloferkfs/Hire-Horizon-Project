@@ -22,7 +22,12 @@ namespace Domain.Service.Admin.Interfaces
 
         public Task<List<Location>> GetLocations();
 
-        public Task<Location> AddLocation(Location location);
+        public Task<List<Skill>> GetSkills();
+
+        public Task<List<JobCategory>> GetCategories();
+        public Task<List<Industry>> GetIndustries();
+
+       public Task<Location> AddLocation(Location location);
 
         public Task<bool> DeleteLocationById(Guid id);
 

@@ -20,6 +20,10 @@ namespace Domain.Service.Admin.Interfaces
         public Task<List<Joblist>> GetAllJobs();
 
         public Task<List<LocationDto>> GetLocations();
+        public Task<List<CategoryDto>> GetCategories();
+        public Task<List<IndustryDto>> GetIndustries();
+        public Task<List<PostedSkillDTO>> GetSkills();
+
 
         public Task<LocationDto> AddLocation(LocationDto location);
 
